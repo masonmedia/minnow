@@ -1,0 +1,131 @@
+<template>
+    <div class="d-flex flex-column min-vh-100">
+        <!-- Hero -->
+         <x-hero
+         title="Why Minnow Framework?"
+         description="A learning project and a working tool — small enough to read in an afternoon, capable enough to build real things with."></x-hero>
+
+        <!-- Story -->
+        <section class="py-6 bg-light">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-4">The idea</h2>
+                        <p class="fs-5 text-secondary lh-lg">
+                            Most frameworks solve real problems — but they also introduce layers of abstraction, build tooling, and configuration that can get in the way when you just want to understand how something works.
+                        </p>
+                        <p class="fs-5 text-secondary lh-lg">
+                            Mini Framework is built to be readable. The entire core is two files: <code>framework.js</code> handles components, reactivity, and directives; <code>router.js</code> handles navigation and state. No virtual DOM, no compiler, no magic.
+                        </p>
+                        <p class="fs-5 text-secondary lh-lg mb-0">
+                            If something doesn't work the way you expect, you can read the source and find out why. That's the point.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it's built -->
+        <section class="py-6 bg-white">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">How it works</h2>
+                    <p class="text-muted">Two files, a few hundred lines each.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-5">
+                        <div class="card border-0 bg-light rounded-4 p-4 h-100">
+                            <h5 class="fw-bold mb-3"><code>lib/framework.js</code></h5>
+                            <ul class="list-unstyled text-muted mb-0 d-flex flex-column gap-2">
+                                <li>✦ Parses <code>&lt;template&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> blocks</li>
+                                <li>✦ Makes <code>data</code> reactive with <code>Object.defineProperty</code></li>
+                                <li>✦ Processes <code>v-if</code>, <code>v-for</code>, <code>v-model</code>, <code>@click</code>, <code>:class</code></li>
+                                <li>✦ Runs <code>prefetch()</code> before render, <code>mounted()</code> after</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card border-0 bg-light rounded-4 p-4 h-100">
+                            <h5 class="fw-bold mb-3"><code>lib/router.js</code></h5>
+                            <ul class="list-unstyled text-muted mb-0 d-flex flex-column gap-2">
+                                <li>✦ Intercepts link clicks and popstate events</li>
+                                <li>✦ Matches URLs to routes, supports <code>:param</code> segments</li>
+                                <li>✦ Fades between pages with CSS transitions</li>
+                                <li>✦ <code>$store</code> — localStorage-backed fetch cache</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Directives reference -->
+        <section class="py-6 bg-light">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Directives at a glance</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="table-responsive">
+                            <table class="table table-bordered rounded-4 overflow-hidden bg-white align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="fw-semibold px-4 py-3">Directive</th>
+                                        <th class="fw-semibold px-4 py-3">Example</th>
+                                        <th class="fw-semibold px-4 py-3">What it does</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-muted small">
+                                    <tr>
+                                        <td class="px-4 py-3"><code>{{ }}</code></td>
+                                        <td class="px-4 py-3"><code>{{ post.title }}</code></td>
+                                        <td class="px-4 py-3">Render a value as text</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3"><code>v-for</code></td>
+                                        <td class="px-4 py-3"><code>v-for="post in posts"</code></td>
+                                        <td class="px-4 py-3">Repeat element for each item</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3"><code>v-if</code></td>
+                                        <td class="px-4 py-3"><code>v-if="post"</code></td>
+                                        <td class="px-4 py-3">Show/hide based on condition</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3"><code>v-model</code></td>
+                                        <td class="px-4 py-3"><code>v-model="query"</code></td>
+                                        <td class="px-4 py-3">Two-way input binding</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3"><code>@click</code></td>
+                                        <td class="px-4 py-3"><code>@click="save"</code></td>
+                                        <td class="px-4 py-3">Click event handler</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3"><code>:class</code></td>
+                                        <td class="px-4 py-3"><code>:class="{ active: isOpen }"</code></td>
+                                        <td class="px-4 py-3">Conditional class binding</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script>
+({
+    meta: {
+        title:       'About | Minnow Framework ',
+        description: 'Learn how it works.',
+        image:       'https://mysite.com/og/about.png',
+    },
+    data() {
+        return {}
+    }
+})
+</script>

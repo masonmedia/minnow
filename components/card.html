@@ -1,0 +1,42 @@
+<template>
+    <div class="card">
+        <h3 class="card-title">{{title}}</h3>
+        <p class="card-content">{{content}}</p>
+    </div>
+</template>
+
+<script>
+({
+    data: {
+        title: 'Card Title',
+        content: 'Card content goes here'
+    }
+})
+</script>
+
+<style>
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.card-content {
+    color: #64748b;
+    line-height: 1.6;
+}
+</style>

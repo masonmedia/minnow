@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with Mini Framework",
+    "excerpt": "Learn how to build modern web applications with our lightweight framework that requires no build tools or dependencies.",
+    "content": "Welcome to Mini Framework! This guide will walk you through the basics of building single-page applications using our Vue-style component system. With just HTML, CSS, and vanilla JavaScript, you can create reactive, component-based applications with routing, state management, and more.",
+    "author": "Jane Smith",
+    "date": "2024-01-15",
+    "category": "Tutorial"
+  },
+  {
+    "id": 2,
+    "title": "Understanding Reactive Data Binding",
+    "excerpt": "Deep dive into how our framework implements reactive data binding without any external dependencies.",
+    "content": "Reactive data binding is at the heart of modern web frameworks. In this post, we explore how Mini Framework achieves reactivity using JavaScript Proxies and custom getters/setters. You'll learn how changes to your data automatically update the DOM, and how to leverage this power in your applications.",
+    "author": "John Doe",
+    "date": "2024-01-20",
+    "category": "Technical"
+  },
+  {
+    "id": 3,
+    "title": "Building a Blog with Components",
+    "excerpt": "A practical guide to structuring your application with reusable components and managing application state.",
+    "content": "Components are the building blocks of modern web applications. This tutorial demonstrates how to create reusable components, pass data between them, and manage both local and global state. We'll build a complete blog system from scratch, showing best practices along the way.",
+    "author": "Sarah Johnson",
+    "date": "2024-02-01",
+    "category": "Tutorial"
+  },
+  {
+    "id": 4,
+    "title": "Client-Side Routing Made Simple",
+    "excerpt": "Implement smooth page transitions and dynamic routes without a complex routing library.",
+    "content": "Single-page applications need robust routing. Mini Framework provides an intuitive routing system that supports dynamic parameters, nested routes, and smooth transitions. Learn how to structure your routes, handle navigation, and create beautiful page transitions that enhance user experience.",
+    "author": "Mike Wilson",
+    "date": "2024-02-10",
+    "category": "Guide"
+  },
+  {
+    "id": 5,
+    "title": "Fetching and Managing Remote Data",
+    "excerpt": "Learn patterns for integrating external APIs and managing asynchronous data in your components.",
+    "content": "Modern applications often need to fetch data from APIs. This guide covers best practices for making API requests, handling loading states, managing errors, and caching responses. We'll also explore how to integrate third-party APIs seamlessly into your Mini Framework components.",
+    "author": "Emily Chen",
+    "date": "2024-02-15",
+    "category": "Technical"
+  },
+  {
+    "id": 6,
+    "title": "Advanced Directives and Custom Logic",
+    "excerpt": "Take your skills further with advanced directive usage and custom implementations for complex scenarios.",
+    "content": "Once you've mastered the basics, it's time to explore advanced features. This post covers complex v-for iterations, conditional rendering strategies, dynamic class binding, and custom directive creation. You'll also learn how to extend the framework with your own functionality while maintaining its lightweight philosophy.",
+    "author": "David Martinez",
+    "date": "2024-02-20",
+    "category": "Advanced"
+  }
+]

@@ -1,0 +1,67 @@
+<template>
+    <div>
+        <div class="container py-5">
+            <div v-if="notFound" class="text-center py-5">
+                <h2 class="fw-bold">Post not found</h2>
+                <p class="text-muted">That post doesn't exist.</p>
+                <a href="/blog" class="btn btn-outline-primary mt-2">← Back to Blog</a>
+            </div>
+
+            <div v-if="post" class="row justify-content-center">
+                <div class="col-lg-8">
+                    <a href="/blog" class="text-muted text-decoration-none small d-inline-block mb-4">← Back to Blog</a>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                        <span class="badge rounded-pill" style="background:#e0e7ff;color:#4f46e5">{{post.category}}</span>
+                        <small class="text-muted">{{post.date}}</small>
+                    </div>
+                    <h1 class="fw-bold display-6 mb-2">{{post.title}}</h1>
+                    <p class="text-muted mb-5">By {{post.author}}</p>
+                    <div class="fs-5 lh-lg text-secondary">
+                        {{post.content}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+({
+    meta() {
+        const post = this.data.post;
+        return {
+            title:          `${post?.title} — Minnow Framework`,
+            description:    post?.body?.slice(0, 155),
+            image:          post?.image,
+            imageAlt:       post?.title,
+            type:           'article',
+            twitterCard:    'summary_large_image',
+            twitterCreator: '@author',
+            article: {
+                publishedTime: post?.createdAt,
+                modifiedTime:  post?.updatedAt,
+                author:        post?.author,
+                section:       post?.category,
+                tags:          post?.tags,
+            }
+        }
+    },
+    data() {
+        return {
+            post: null,
+            notFound: false,
+        }
+    },
+    async prefetch() {
+        const slug = this.data.$route.params.slug;
+        const slugify = t => t.toLowerCase().trim().replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-');
+        const posts = await this.data.$store.fetch('/data/posts.json');
+        const found = posts.find(p => slugify(p.title) === slug);
+        if (found) {
+            this.data.post = found;
+        } else {
+            this.data.notFound = true;
+        }
+    }
+})
+</script>

@@ -1,0 +1,115 @@
+<template>
+    <div class="d-flex flex-column min-vh-100">
+        <div class="container py-5 flex-grow-1">
+            <div v-if="loading" class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="placeholder-glow mb-4">
+                        <span class="placeholder col-2 me-2 rounded-pill"></span>
+                        <span class="placeholder col-2 rounded-pill"></span>
+                    </div>
+                    <div class="placeholder-glow mb-4">
+                        <span class="placeholder col-10 fs-3"></span>
+                        <span class="placeholder col-7 fs-3"></span>
+                    </div>
+                    <div class="placeholder-glow">
+                        <span class="placeholder col-12 mb-2"></span>
+                        <span class="placeholder col-12 mb-2"></span>
+                        <span class="placeholder col-12 mb-2"></span>
+                        <span class="placeholder col-9 mb-2"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div v-if="notFound" class="text-center py-5">
+                <h2 class="fw-bold">Post not found</h2>
+                <p class="text-muted">No post with that slug exists.</p>
+                <a href="/blog-remote" class="btn btn-outline-primary mt-2">← Back to Remote Blog</a>
+            </div>
+
+            <div v-if="post" class="row justify-content-center">
+                <div class="col-lg-8">
+                    <a href="/blog-remote" class="text-muted text-decoration-none small d-inline-block mb-4">← Back to Remote Blog</a>
+
+                    <div class="d-flex gap-2 align-items-center mb-3 flex-wrap">
+                        <span class="badge rounded-pill" style="background:#e0e7ff;color:#4f46e5">{{post.tags}}</span>
+                        <small class="text-muted">👍 {{post.reactions.likes}}</small>
+                        <small class="text-muted">👎 {{post.reactions.dislikes}}</small>
+                        <small class="text-muted ms-1">{{post.views}} views</small>
+                    </div>
+
+                    <h1 class="fw-bold display-6 mb-4">{{post.title}}</h1>
+
+                    <div class="fs-5 lh-lg text-secondary mb-5">
+                        {{post.body}}
+                    </div>
+
+                    <div v-if="comments" class="border-top pt-4">
+                        <h2 class="fw-bold fs-4 mb-4">Comments</h2>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="card border-0 bg-light rounded-3 p-3" v-for="comment in comments">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="fw-semibold small">{{comment.user.username}}</span>
+                                    <span class="badge bg-warning text-dark">{{comment.likes}} likes</span>
+                                </div>
+                                <p class="mb-0 text-muted small">{{comment.body}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+({
+    meta() {
+        const post = this.data.post;
+        return {
+            title:          `${post?.title} — Minoor Framework`,
+            description:    post?.body?.slice(0, 155),
+            image:          post?.image,
+            imageAlt:       post?.title,
+            type:           'article',
+            twitterCard:    'summary_large_image',
+            twitterCreator: '@author',
+            article: {
+                publishedTime: post?.createdAt,
+                modifiedTime:  post?.updatedAt,
+                author:        post?.author,
+                section:       post?.category,
+                tags:          post?.tags,
+            }
+        }
+    },
+    data() {
+        return {
+            post: null,
+            comments: [],
+            notFound: false,
+            loading: true,
+        }
+    },
+    async mounted() {
+        const slug = this.data.$route.params.slug;
+        const slugify = t => t.toLowerCase().trim().replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-');
+
+        const data = await this.data.$store.fetch('https://dummyjson.com/posts?limit=150');
+        const post = data.posts.find(p => slugify(p.title) === slug);
+
+        if (!post) {
+            this.data.loading = false;
+            this.data.notFound = true;
+            return;
+        }
+
+        const commentsData = await this.data.$store.fetch(
+            `https://dummyjson.com/posts/${post.id}/comments`
+        );
+
+        this.data.post     = { ...post, slug };
+        this.data.comments = commentsData.comments ?? [];
+        this.data.loading  = false;
+    }
+})
+</script>

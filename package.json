@@ -1,0 +1,21 @@
+{
+  "name": "mini-framework",
+  "version": "1.0.0",
+  "description": "A lightweight, no-dependency mini HTML/JS framework with Vue-style SFCs",
+  "type": "module",
+  "scripts": {
+    "dev": "node serve.js",
+    "start": "node serve.js",
+    "build": "echo 'No build step required - this is a no-dependency framework!'"
+  },
+  "keywords": [
+    "framework",
+    "vanilla-js",
+    "no-dependencies",
+    "sfc",
+    "reactive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}

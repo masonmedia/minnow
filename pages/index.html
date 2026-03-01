@@ -1,0 +1,126 @@
+<template>
+    <div class="d-flex flex-column min-vh-100">
+        <x-hero 
+        badge="Zero dependencies"
+        title="Minnow Framework"
+        description="Vue-inspired single-file components, reactive data, client-side routing, no dependencies, no build tools — all in vanilla JS.">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="/blog" class="btn btn-light text-primary fw-semibold px-4">Read the Blog</a>
+                <a href="/about" class="btn btn-outline-light fw-semibold px-4">Learn More</a>
+            </div>
+        </x-hero>
+
+        <!-- Features -->
+        <section class="py-6 bg-light flex-grow-1">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Everything you need, nothing you don't</h2>
+                    <p class="text-muted">A simple, readable pattern for building reactive pages.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+                            <div class="fs-2 mb-3">⚡</div>
+                            <h5 class="fw-bold">Reactive Data</h5>
+                            <p class="text-muted mb-0">Set <code>this.data.anything</code> and the DOM updates automatically. No virtual DOM, no diffing.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+                            <div class="fs-2 mb-3">📄</div>
+                            <h5 class="fw-bold">Single-File Components</h5>
+                            <p class="text-muted mb-0">Template, script, and style in one <code>.html</code> file. No build step, no bundler, no config.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+                            <div class="fs-2 mb-3">🔗</div>
+                            <h5 class="fw-bold">Client-Side Router</h5>
+                            <p class="text-muted mb-0">Pretty URLs, dynamic routes, and smooth page transitions — without touching the server.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+                            <div class="fs-2 mb-3">🔄</div>
+                            <h5 class="fw-bold">prefetch()</h5>
+                            <p class="text-muted mb-0">Load data before first render. No loading spinners, no layout shift — pages arrive complete.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+                            <div class="fs-2 mb-3">💾</div>
+                            <h5 class="fw-bold">Built-in Store</h5>
+                            <p class="text-muted mb-0"><code>$store.fetch(url)</code> fetches and caches data in localStorage. One line, no boilerplate.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+                            <div class="fs-2 mb-3">🧩</div>
+                            <h5 class="fw-bold">Directives</h5>
+                            <p class="text-muted mb-0"><code>v-for</code>, <code>v-if</code>, <code>v-model</code>, <code>@click</code>, <code>:class</code> — the ones you actually use.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Persistent counter demo -->
+        <section class="py-5 bg-white border-top text-center">
+            <div class="container py-3">
+                <h3 class="fw-bold mb-1">Persistent state demo</h3>
+                <p class="text-muted mb-4">This counter survives page navigation and refresh — it's stored in <code>$store</code>.</p>
+                <div class="d-inline-flex align-items-center gap-3 bg-light border rounded-4 px-4 py-3">
+                    <button @click="decrement" class="btn btn-outline-secondary rounded-circle" style="width:40px;height:40px;line-height:1">−</button>
+                    <span class="fw-bold fs-3 font-monospace" style="min-width:2ch;text-align:center">{{count}}</span>
+                    <button @click="increment" class="btn btn-primary rounded-circle" style="width:40px;height:40px;line-height:1">+</button>
+                </div>
+                <div class="mt-3">
+                    <button @click="resetCount" class="btn btn-link text-muted small text-decoration-none">Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-5 bg-white border-top text-center">
+            <div class="container py-3">
+                <h3 class="fw-bold mb-2">Start building</h3>
+                <p class="text-muted mb-4">Drop it in a folder and open a browser. That's it.</p>
+                <pre class="d-inline-block bg-light border rounded-3 px-4 py-3 text-start small"><code>npm start</code></pre>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script>
+({
+    meta: {
+        title:       'Minnow Framework | Home',
+        description: 'Minnow is a tiny, zero dependency, no build framework with Vue-inspired single-file components, reactive data, client-side routing, no dependencies, no build tools — all in vanilla JS.',
+        image:       'https://mysite.com/og/home.png',
+    },
+    data() {
+        return {
+            count: 0
+        }
+    },
+    methods: {
+        increment() {
+            this.data.count++;
+            this.data.$store.set('count', this.data.count);
+        },
+        decrement() {
+            this.data.count--;
+            this.data.$store.set('count', this.data.count);
+        },
+        resetCount() {
+            this.data.count = 0;
+            this.data.$store.remove('count');
+        }
+    },
+    mounted() {
+        // Restore persisted count — default 0 if never set
+        this.data.count = this.data.$store.get('count', 0);
+    }
+})
+</script>

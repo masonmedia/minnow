@@ -1,0 +1,53 @@
+<template>
+    <div>
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold display-5">Blog</h1>
+                <p class="text-muted fs-5">Tutorials, guides, and insights</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col" v-for="post in posts">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge rounded-pill" style="background:#e0e7ff;color:#4f46e5">{{post.category}}</span>
+                                <small class="text-muted">{{post.date}}</small>
+                            </div>
+                            <h5 class="card-title fw-semibold">
+                                <a href="/blog/{{post.slug}}" class="text-dark text-decoration-none stretched-link">{{post.title}}</a>
+                            </h5>
+                            <p class="card-text text-muted flex-grow-1">{{post.excerpt}}</p>
+                            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+                                <small class="text-muted">By {{post.author}}</small>
+                                <span class="text-primary fw-semibold small">Read more →</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+({
+        meta: {
+        title:       'Blog | Minnow Framework',
+        description: 'News and Docs',
+        image:       'https://mysite.com/og/about.png',
+    },
+    data() {
+        return {
+            posts: [],
+        }
+    },
+    async prefetch() {
+        const raw = await this.data.$store.fetch('/data/posts.json');
+        this.data.posts = raw.map(p => ({
+            ...p,
+            slug: p.title.toLowerCase().trim().replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-')
+        }));
+    }
+})
+</script>

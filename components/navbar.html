@@ -1,0 +1,60 @@
+<template>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <a href="/" class="navbar-brand fw-bold text-primary">Mini Framework</a>
+
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link px-3 rounded {{homeActive}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about" class="nav-link px-3 rounded {{aboutActive}}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog" class="nav-link px-3 rounded {{blogActive}}">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog-remote" class="nav-link px-3 rounded {{blogRemoteActive}}">Remote Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</template>
+
+<script>
+({
+    data() {
+        const p = window.location.pathname;
+        return {
+            homeActive:       p === '/' ? 'active' : '',
+            aboutActive:      p === '/about' ? 'active' : '',
+            blogActive:       p === '/blog' || p.startsWith('/blog/') ? 'active' : '',
+            blogRemoteActive: p === '/blog-remote' || p.startsWith('/blog-remote/') ? 'active' : ''
+        }
+    }
+})
+</script>
+
+<style>
+.navbar-nav .nav-link {
+    color: #64748b;
+    font-weight: 500;
+    font-size: 0.925rem;
+    transition: color 0.15s, background 0.15s;
+}
+.navbar-nav .nav-link:hover {
+    color: #2563eb;
+    background: #eff6ff;
+}
+.navbar-nav .nav-link.active {
+    color: #2563eb;
+    background: #eff6ff;
+    font-weight: 600;
+}
+</style>

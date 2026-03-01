@@ -1,0 +1,31 @@
+<template>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; {{year}} Mini Framework. Built with no dependencies.</p>
+        </div>
+    </footer>
+</template>
+
+<script>
+({
+    data: {
+        year: new Date().getFullYear()
+    }
+})
+</script>
+
+<style>
+.footer {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    text-align: center;
+    color: #64748b;
+}
+</style>

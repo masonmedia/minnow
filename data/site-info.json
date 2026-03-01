@@ -1,0 +1,23 @@
+{
+  "siteName": "Mini Framework",
+  "tagline": "A lightweight, no-dependency web framework",
+  "description": "Build modern single-page applications with Vue-style components, reactive data binding, and client-side routing - all without any build tools or dependencies.",
+  "features": [
+    {
+      "title": "Zero Dependencies",
+      "description": "Pure vanilla JavaScript with no external libraries required"
+    },
+    {
+      "title": "Vue-Style Components",
+      "description": "Familiar single-file component structure with template, script, and style blocks"
+    },
+    {
+      "title": "Reactive Data Binding",
+      "description": "Automatic DOM updates when your data changes"
+    },
+    {
+      "title": "Built-in Router",
+      "description": "Smooth page transitions and dynamic routing out of the box"
+    }
+  ]
+}
