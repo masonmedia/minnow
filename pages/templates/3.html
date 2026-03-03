@@ -1,0 +1,623 @@
+<template>
+<div>
+
+    <!-- ── Nav ── -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
+        <div class="container py-1">
+            <a href="/" class="navbar-brand fw-bold text-decoration-none d-flex align-items-center gap-2 fs-nav-brand">
+                <span class="nav-logo-mark"></span>
+                Forma<span class="text-indigo">Studio</span>
+            </a>
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#fsNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="fsNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-1">
+                    <li class="nav-item"><a href="#work" class="nav-link fw-medium px-3 text-secondary">Work</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link fw-medium px-3 text-secondary">Services</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link fw-medium px-3 text-secondary">About</a></li>
+                    <li class="nav-item"><a href="#journal" class="nav-link fw-medium px-3 text-secondary">Journal</a></li>
+                    <li class="nav-item ms-2">
+                        <a href="#contact" class="btn px-4 fw-semibold text-white rounded-pill btn-dark-sm">Start a project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <section class="overflow-hidden position-relative bg-near-white min-vh-hero">
+        <div class="container py-5">
+            <div class="row align-items-center g-5 min-vh-hero-inner">
+                <div class="col-lg-6 py-5">
+                    <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-5 badge-indigo-soft">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#6366f1" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8"/></svg>
+                        <span class="text-uppercase fw-semibold text-indigo fs-badge ls-wide">Available for 2026 projects</span>
+                    </div>
+                    <h1 class="fw-bold mb-4 display-hero text-near-black">
+                        We make<br>brands that<br><em class="text-indigo">move people</em>
+                    </h1>
+                    <p class="mb-5 lh-lg text-muted fs-5 hero-lead">
+                        Forma is a creative studio crafting visual identities, digital experiences, and campaigns for brands that want to stand out.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap align-items-center">
+                        <a href="#work" class="btn btn-lg px-5 fw-semibold text-white rounded-pill btn-near-black shadow-hero">See our work</a>
+                        <a href="#contact" class="btn btn-lg px-5 fw-semibold rounded-pill btn-outline-light-border">Get in touch</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 mt-5 pt-3 border-top">
+                        <div class="text-center">
+                            <div class="fw-bold fs-stat text-near-black">120+</div>
+                            <div class="text-uppercase text-muted fs-label ls-wider">Brands</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="text-center">
+                            <div class="fw-bold fs-stat text-near-black">8yr</div>
+                            <div class="text-uppercase text-muted fs-label ls-wider">Studio</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="text-center">
+                            <div class="fw-bold fs-stat text-near-black">22</div>
+                            <div class="text-uppercase text-muted fs-label ls-wider">Awards</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block position-relative hero-collage">
+                    <div class="rounded-4 overflow-hidden position-absolute shadow-lg hero-img-main">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Creative studio" class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="rounded-4 overflow-hidden position-absolute shadow-lg hero-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Design process" class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="position-absolute bg-white rounded-3 shadow-lg p-3 d-flex align-items-center gap-3 hero-badge-card">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 icon-circle-indigo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#6366f1" viewBox="0 0 16 16"><path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34z"/><path d="M8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/></svg>
+                        </div>
+                        <div>
+                            <div class="fw-semibold fs-sm text-near-black">Awwwards Winner</div>
+                            <div class="fs-xs text-muted">Site of the Day — 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Client logos ── -->
+    <div class="bg-white border-top border-bottom py-4">
+        <div class="container">
+            <div class="d-flex align-items-center gap-5 flex-wrap justify-content-center">
+                <div class="text-uppercase fw-bold text-muted fs-label ls-wide">Trusted by</div>
+                <div class="fw-bold text-muted-light fs-client">Miro</div>
+                <div class="fw-bold text-muted-light fs-client">Linear</div>
+                <div class="fw-bold text-muted-light fs-client">Notion</div>
+                <div class="fw-bold text-muted-light fs-client">Framer</div>
+                <div class="fw-bold text-muted-light fs-client">Loom</div>
+                <div class="fw-bold text-muted-light fs-client">Vercel</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Work ── -->
+    <section class="py-5 bg-white" id="work">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+                <div>
+                    <div class="fw-bold text-uppercase mb-3 text-indigo fs-label ls-wider">Selected Work</div>
+                    <h2 class="fw-bold mb-0 display-section text-near-black">Recent projects</h2>
+                </div>
+                <a href="#contact" class="btn fw-semibold rounded-pill px-4 btn-outline-muted">View all work →</a>
+            </div>
+            <div class="row g-4 mb-4">
+                <div class="col-md-7">
+                    <div class="rounded-4 overflow-hidden position-relative card-project h-420 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=900&q=80" alt="Brand identity" class="w-100 h-100 object-fit-cover">
+                        <div class="overlay-grad position-absolute top-0 start-0 w-100 h-100"></div>
+                        <div class="position-absolute bottom-0 start-0 p-4">
+                            <span class="badge rounded-pill fw-normal mb-2 badge-glass">Brand Identity</span>
+                            <h3 class="text-white fw-bold mb-1 ls-tight">Luma Creative</h3>
+                            <p class="mb-0 text-white-60 fs-sm">Full visual identity system</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex flex-column gap-4">
+                    <div class="rounded-4 overflow-hidden position-relative card-project flex-grow-1 cursor-pointer" style="min-height:190px">
+                        <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=700&q=80" alt="Web design" class="w-100 h-100 object-fit-cover">
+                        <div class="overlay-grad position-absolute top-0 start-0 w-100 h-100"></div>
+                        <div class="position-absolute bottom-0 start-0 p-3">
+                            <span class="badge rounded-pill fw-normal mb-1 badge-glass badge-glass-sm">Web Design</span>
+                            <h4 class="text-white fw-bold mb-0 ls-tight">Orbit Finance</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="rounded-4 overflow-hidden position-relative card-project h-260 cursor-pointer">
+                        <img src="https://plus.unsplash.com/premium_vector-1689096907767-4cb2a8773a91?q=80&w=2320&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Motion" class="w-100 h-100 object-fit-cover">
+                        <div class="overlay-grad position-absolute top-0 start-0 w-100 h-100"></div>
+                        <div class="position-absolute bottom-0 start-0 p-3">
+                            <span class="badge rounded-pill fw-normal mb-1 badge-glass badge-glass-sm">Motion</span>
+                            <h4 class="text-white fw-bold mb-0 ls-snug">Fern Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden position-relative card-project h-260 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&q=80" alt="Motion" class="w-100 h-100 object-fit-cover">
+                        <div class="overlay-grad position-absolute top-0 start-0 w-100 h-100"></div>
+                        <div class="position-absolute bottom-0 start-0 p-3">
+                            <span class="badge rounded-pill fw-normal mb-1 badge-glass badge-glass-sm">Motion</span>
+                            <h4 class="text-white fw-bold mb-0 ls-snug">Prism Labs</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden position-relative card-project h-260 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?w=600&q=80" alt="Photography" class="w-100 h-100 object-fit-cover">
+                        <div class="overlay-grad position-absolute top-0 start-0 w-100 h-100"></div>
+                        <div class="position-absolute bottom-0 start-0 p-3">
+                            <span class="badge rounded-pill fw-normal mb-1 badge-glass badge-glass-sm">Photography</span>
+                            <h4 class="text-white fw-bold mb-0 ls-snug">Soleil Hotel</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden position-relative card-project h-260 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&q=80" alt="UX" class="w-100 h-100 object-fit-cover">
+                        <div class="overlay-grad position-absolute top-0 start-0 w-100 h-100"></div>
+                        <div class="position-absolute bottom-0 start-0 p-3">
+                            <span class="badge rounded-pill fw-normal mb-1 badge-glass badge-glass-sm">UX Design</span>
+                            <h4 class="text-white fw-bold mb-0 ls-snug">Arc Platform</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Services ── -->
+    <section class="py-5 bg-secondary bg-opacity-25" id="services">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <div class="fw-bold text-uppercase mb-3 text-indigo fs-label ls-wider">What We Do</div>
+                    <h2 class="fw-bold mb-0 display-section text-near-black">End-to-end creative<br>for ambitious brands</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-white rounded-4 p-4 h-100 d-flex flex-column border card-service">
+                        <div class="mb-4 rounded-3 d-flex align-items-center justify-content-center icon-circle-indigo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#6366f1" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/></svg>
+                        </div>
+                        <div class="fw-bold text-uppercase mb-2 text-muted fs-label ls-wide">01</div>
+                        <h4 class="fw-bold mb-3 ls-tight text-near-black">Brand Identity</h4>
+                        <p class="text-secondary fs-sm lh-lg">Logo, typography, colour, voice — everything that makes your brand unmistakable.</p>
+                        <ul class="list-unstyled mt-3 mb-0 fs-xs text-muted service-list">
+                            <li class="py-1 border-bottom">Logo &amp; Mark</li>
+                            <li class="py-1 border-bottom">Brand Guidelines</li>
+                            <li class="py-1">Verbal Identity</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="rounded-4 p-4 h-100 d-flex flex-column bg-near-black text-light card-service">
+                        <div class="mb-4 rounded-3 d-flex align-items-center justify-content-center icon-circle-indigo-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#6366f1" viewBox="0 0 16 16"><path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/></svg>
+                        </div>
+                        <div class="fw-bold text-uppercase mb-2 fs-label ls-wide text-white">02</div>
+                        <h4 class="fw-bold mb-3 text-white ls-tight">Web Design</h4>
+                        <p class="fs-sm lh-lg text-white">Websites and digital products that convert visitors into customers.</p>
+                        <ul class="list-unstyled mt-3 mb-0 fs-xs text-white text-opacity-75 service-list-dark">
+                            <li class="py-1">UI / UX Design</li>
+                            <li class="py-1">Webflow / Framer</li>
+                            <li class="py-1">Design Systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-white rounded-4 p-4 h-100 d-flex flex-column border card-service">
+                        <div class="mb-4 rounded-3 d-flex align-items-center justify-content-center icon-circle-indigo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#6366f1" viewBox="0 0 16 16"><path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/><path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/></svg>
+                        </div>
+                        <div class="fw-bold text-uppercase mb-2 text-muted fs-label ls-wide">03</div>
+                        <h4 class="fw-bold mb-3 ls-tight text-near-black">Art Direction</h4>
+                        <p class="text-secondary fs-sm lh-lg">Creative strategy and visual direction for campaigns, editorial, and content.</p>
+                        <ul class="list-unstyled mt-3 mb-0 fs-xs text-muted service-list">
+                            <li class="py-1 border-bottom">Campaign Creative</li>
+                            <li class="py-1 border-bottom">Photography Direction</li>
+                            <li class="py-1">Editorial Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-white rounded-4 p-4 h-100 d-flex flex-column border card-service">
+                        <div class="mb-4 rounded-3 d-flex align-items-center justify-content-center icon-circle-indigo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#6366f1" viewBox="0 0 16 16"><path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
+                        </div>
+                        <div class="fw-bold text-uppercase mb-2 text-muted fs-label ls-wide">04</div>
+                        <h4 class="fw-bold mb-3 ls-tight text-near-black">Motion &amp; Film</h4>
+                        <p class="text-secondary fs-sm lh-lg">Brand films, motion graphics, and animated assets that tell your story.</p>
+                        <ul class="list-unstyled mt-3 mb-0 fs-xs text-muted service-list">
+                            <li class="py-1 border-bottom">Brand Films</li>
+                            <li class="py-1 border-bottom">Motion Graphics</li>
+                            <li class="py-1">Social Content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── About ── -->
+    <section class="py-5 bg-white" id="about">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 position-relative d-none d-lg-block about-collage">
+                    <div class="rounded-4 overflow-hidden position-absolute about-img-main">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="Team" class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="rounded-4 overflow-hidden position-absolute shadow-lg about-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Studio" class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="position-absolute bg-white rounded-3 shadow px-3 py-2 d-flex align-items-center gap-2 about-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#6366f1" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+                        <span class="fs-xs fw-semibold text-near-black">B Corp Certified</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fw-bold text-uppercase mb-3 text-indigo fs-label ls-wider">About Forma</div>
+                    <h2 class="fw-bold mb-4 display-section text-near-black">A studio built on<br>craft and curiosity</h2>
+                    <p class="mb-4 lh-lg text-secondary fs-5">We're a team of designers, art directors, and strategists who believe the best creative work happens when rigour meets imagination.</p>
+                    <p class="mb-5 lh-lg text-secondary">Every project starts with deep listening. We want to understand your customers, your culture, and the gap between where you are and where you want to be.</p>
+                    <div class="row g-3 mb-5">
+                        <div class="col-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center icon-circle-indigo mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#6366f1" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="fw-semibold mb-1 fs-sm text-near-black">Craft-first</div>
+                                    <div class="fs-xs text-muted">Details matter more than speed.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center icon-circle-indigo mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#6366f1" viewBox="0 0 16 16"><path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/><path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="fw-semibold mb-1 fs-sm text-near-black">Collaborative</div>
+                                    <div class="fs-xs text-muted">Your team, extended.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center icon-circle-indigo mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#6366f1" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="fw-semibold mb-1 fs-sm text-near-black">On time</div>
+                                    <div class="fs-xs text-muted">Deadlines are promises.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center icon-circle-indigo mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#6366f1" viewBox="0 0 16 16"><path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="fw-semibold mb-1 fs-sm text-near-black">Award-winning</div>
+                                    <div class="fs-xs text-muted">Recognised globally.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-lg px-5 fw-semibold text-white rounded-pill btn-near-black">Meet the team →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Journal ── -->
+    <section class="py-5 bg-primary bg-opacity-10" id="journal">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+                <div>
+                    <div class="fw-bold text-uppercase mb-3 text-indigo fs-label ls-wider">Journal</div>
+                    <h2 class="fw-bold mb-0 display-section text-near-black">Thinking out loud</h2>
+                </div>
+                <a href="#" class="btn btn-dark fw-semibold rounded-pill px-4 fs-sm">All posts →</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="bg-white rounded-4 overflow-hidden border card-blog">
+                        <div class="blog-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?w=800&q=80" alt="Post" class="w-100 h-100 object-fit-cover blog-img">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge rounded-pill fw-semibold badge-indigo-pill fs-xs">Design Thinking</span>
+                                <span class="fs-xs text-muted">5 min read</span>
+                            </div>
+                            <h4 class="fw-bold mb-2 ls-tight text-near-black lh-sm">Why most brand audits miss the point entirely</h4>
+                            <p class="text-secondary fs-sm lh-lg">The problem isn't what your logo looks like. It's the assumptions baked into every touchpoint that nobody questions.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top">
+                                <div class="fs-xs text-muted">March 12, 2026</div>
+                                <a href="#" class="fw-semibold text-decoration-none text-indigo fs-xs">Read →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white rounded-4 overflow-hidden border card-blog">
+                        <div class="blog-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?w=800&q=80" alt="Post" class="w-100 h-100 object-fit-cover blog-img">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge rounded-pill fw-semibold badge-indigo-pill fs-xs">Typography</span>
+                                <span class="fs-xs text-muted">7 min read</span>
+                            </div>
+                            <h4 class="fw-bold mb-2 ls-tight text-near-black lh-sm">The case for going back to editorial type principles</h4>
+                            <p class="text-secondary fs-sm lh-lg">Digital design has drifted far from what print designers spent centuries perfecting. It's time to come back.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top">
+                                <div class="fs-xs text-muted">February 28, 2026</div>
+                                <a href="#" class="fw-semibold text-decoration-none text-indigo fs-xs">Read →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <div class="fw-bold text-uppercase mb-3 text-indigo fs-label ls-wider">Client Words</div>
+                <h2 class="fw-bold display-section text-near-black">What clients say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="bg-secondary bg-opacity-10 rounded-4 p-4 h-100 d-flex flex-column card-testimonial">
+                        <div class="mb-3 fw-bold text-indigo quote-mark">"</div>
+                        <p class="fw-medium flex-grow-1 mb-4 text-near-black lh-lg fs-sm">Forma didn't just design our brand — they helped us understand what we actually stand for. That clarity changed everything.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sophie" class="rounded-circle object-fit-cover avatar-sm flex-shrink-0">
+                            <div>
+                                <div class="fw-semibold fs-sm text-near-black">Sophie Laurent</div>
+                                <div class="fs-xs text-muted">Founder, Luma Creative</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-secondary bg-opacity-10 rounded-4 p-4 h-100 d-flex flex-column card-testimonial">
+                        <div class="mb-3 fw-bold text-indigo quote-mark">"</div>
+                        <p class="fw-medium flex-grow-1 mb-4 text-near-black lh-lg fs-sm">The site they built for us outperforms our old one by every metric. But more than that — it finally looks like us.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Marcus" class="rounded-circle object-fit-cover avatar-sm flex-shrink-0">
+                            <div>
+                                <div class="fw-semibold fs-sm text-near-black">Marcus Okafor</div>
+                                <div class="fs-xs text-muted">CEO, Orbit Finance</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-secondary bg-opacity-10 rounded-4 p-4 h-100 d-flex flex-column card-testimonial">
+                        <div class="mb-3 fw-bold text-indigo quote-mark">"</div>
+                        <p class="fw-medium flex-grow-1 mb-4 text-near-black lh-lg fs-sm">I've worked with a lot of agencies. Forma is the first one that pushed back on our brief in a way that led to better work.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Priya" class="rounded-circle object-fit-cover avatar-sm flex-shrink-0">
+                            <div>
+                                <div class="fw-semibold fs-sm text-near-black">Priya Nair</div>
+                                <div class="fs-xs text-muted">CMO, Dusk Apparel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="py-5 position-relative overflow-hidden bg-near-black" id="contact">
+        <div class="contact-glow position-absolute rounded-circle"></div>
+        <div class="container py-5 position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="fw-bold text-uppercase mb-3 text-indigo fs-label ls-wider">Get In Touch</div>
+                    <h2 class="fw-bold text-white mb-4 display-contact">Let's make something<br><em class="text-indigo">worth remembering</em></h2>
+                    <p class="mb-5 text-white-55 fs-5">Tell us about your project. We respond to every inquiry within 24 hours.</p>
+                    <div class="bg-white rounded-4 p-4 p-lg-5 text-start shadow-lg">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold fs-xs text-near-black">Name</label>
+                                <input type="text" class="form-control rounded-3 border-2 input-padded" placeholder="Jane Smith">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold fs-xs text-near-black">Email</label>
+                                <input type="email" class="form-control rounded-3 border-2 input-padded" placeholder="jane@company.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold fs-xs text-near-black">Service</label>
+                                <select class="form-select rounded-3 border-2 input-padded">
+                                    <option>Brand Identity</option>
+                                    <option>Web Design</option>
+                                    <option>Art Direction</option>
+                                    <option>Motion &amp; Film</option>
+                                    <option>Full Project</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold fs-xs text-near-black">Tell us about your project</label>
+                                <textarea class="form-control rounded-3 border-2 input-padded" rows="4" placeholder="What are you building? What's your timeline and budget?"></textarea>
+                            </div>
+                            <div class="col-12 pt-2">
+                                <button class="btn btn-lg w-100 rounded-3 fw-semibold py-3 text-white btn-near-black">Send Message →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="py-4 bg-near-black border-top border-white-7">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-4">
+                    <div class="fw-bold text-white d-flex align-items-center gap-2 ls-tight">
+                        <span class="footer-logo-mark flex-shrink-0"></span>
+                        Forma<span class="text-indigo">Studio</span>
+                    </div>
+                    <div class="fs-xs text-white-30 mt-1">Creative studio — Montréal</div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center gap-4">
+                    <a href="#work" class="text-decoration-none fs-xs footer-link">Work</a>
+                    <a href="#services" class="text-decoration-none fs-xs footer-link">Services</a>
+                    <a href="#about" class="text-decoration-none fs-xs footer-link">About</a>
+                    <a href="#contact" class="text-decoration-none fs-xs footer-link">Contact</a>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="fs-xs text-white-25">© 2026 Forma Studio. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</template>
+
+<script>
+({
+    meta: {
+        title:       'Forma Studio — Creative Design Studio',
+        description: 'A creative studio crafting visual identities, digital experiences, and campaigns for brands that want to stand out.',
+        siteName:    'Forma Studio',
+        twitterCard: 'summary_large_image',
+    },
+    data() { return {} }
+})
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ── Base ── */
+body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+/* ── Colour tokens ── */
+.text-indigo        { color: #6366f1; }
+.text-near-black    { color: #0a0a0a; }
+.text-muted-light   { color: #d4d4d4; }
+.text-white-60      { color: rgba(255,255,255,.6); }
+.text-white-55      { color: rgba(255,255,255,.55); }
+.text-white-40      { color: rgba(255,255,255,.4); }
+.text-white-35      { color: rgba(255,255,255,.35); }
+.text-white-30      { color: rgba(255,255,255,.3); }
+.text-white-25      { color: rgba(255,255,255,.25); }
+.bg-near-white      { background: #fafafa; }
+.bg-near-black      { background: #0a0a0a; }
+.border-white-7     { border-color: rgba(255,255,255,.07) !important; }
+
+/* ── Typography scale ── */
+.fs-nav-brand  { font-size: 1.1rem; }
+.fs-badge      { font-size: .7rem; }
+.fs-label      { font-size: .68rem; }
+.fs-client     { font-size: 1.05rem; }
+.fs-sm         { font-size: .9rem; }
+.fs-xs         { font-size: .75rem; }
+.fs-stat       { font-size: 1.5rem; }
+
+/* ── Letter spacing ── */
+.ls-wide    { letter-spacing: .1em; }
+.ls-wider   { letter-spacing: .14em; }
+.ls-tight   { letter-spacing: -.02em; }
+.ls-snug    { letter-spacing: -.01em; }
+
+/* ── Display headings ── */
+.display-hero    { font-size: clamp(3rem, 6vw, 5.5rem); line-height: .95; letter-spacing: -.04em; }
+.display-section { font-size: clamp(2rem, 4vw, 3rem);   line-height: 1;   letter-spacing: -.03em; }
+.display-contact { font-size: clamp(2.2rem, 4vw, 3.5rem); letter-spacing: -.04em; line-height: 1; }
+
+/* ── Hero ── */
+.min-vh-hero       { min-height: 94vh; }
+.min-vh-hero-inner { min-height: 88vh; }
+.hero-lead         { max-width: 420px; }
+.shadow-hero       { box-shadow: 0 4px 24px rgba(0,0,0,.18); }
+
+.hero-collage      { height: 580px; }
+.hero-img-main     { top: 0; right: 0; width: 72%; height: 380px; }
+.hero-img-secondary{ bottom: 0; left: 0; width: 52%; height: 240px; }
+.hero-badge-card   { bottom: 60px; right: 0; z-index: 2; min-width: 190px; }
+
+/* ── About collage ── */
+.about-collage        { height: 520px; }
+.about-img-main       { top: 0; left: 0; width: 65%; height: 380px; z-index: 1; }
+.about-img-secondary  { bottom: 0; right: 0; width: 55%; height: 300px; z-index: 2; }
+.about-badge          { top: 20px; right: 0; z-index: 3; }
+
+/* ── Buttons ── */
+.btn-near-black        { background: #0a0a0a; }
+.btn-dark-sm           { background: #0a0a0a; font-size: .875rem; }
+.btn-outline-muted     { border: 1.5px solid #d4d4d4; color: #0a0a0a; font-size: .875rem; }
+.btn-outline-light-border { color: #0a0a0a; border: 1.5px solid #d4d4d4; }
+
+/* ── Badges ── */
+.badge-indigo-soft  { background: #f0f0ff; border: 1px solid #e0e0ff; }
+.badge-glass        { background: rgba(255,255,255,.15); color: white; font-size: .7rem; border: 1px solid rgba(255,255,255,.2); }
+.badge-glass-sm     { font-size: .65rem; }
+.badge-indigo-pill  { background: #f0f0ff; color: #6366f1; }
+
+/* ── Icon circles ── */
+.icon-circle-indigo      { width: 48px; height: 48px; background: #f0f0ff; }
+.icon-circle-indigo-dark { width: 48px; height: 48px; background: rgba(99,102,241,.1); }
+
+/* ── Stat divider ── */
+.stat-divider { width: 1px; height: 36px; background: #e5e5e5; }
+
+/* ── Project cards ── */
+.card-project          { transition: transform .3s; }
+.card-project:hover    { transform: scale(1.01); }
+.card-project.h-420    { height: 420px; }
+.card-project.h-260    { height: 260px; }
+.cursor-pointer        { cursor: pointer; }
+.overlay-grad          { background: linear-gradient(to top, rgba(0,0,0,.65) 0%, transparent 55%); }
+
+/* ── Service cards ── */
+.card-service              { transition: transform .2s, box-shadow .2s; }
+.card-service:hover        { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.08); }
+.service-list li           { border-color: #f5f5f5; }
+.service-list-dark li      { border-color: rgba(255,255,255,.07); }
+
+/* ── Blog cards ── */
+.card-blog              { border-color: #f0f0f0 !important; transition: transform .2s, box-shadow .2s; }
+.card-blog:hover        { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,.07); }
+.blog-img-wrap          { height: 220px; overflow: hidden; }
+.blog-img               { transition: transform .4s; }
+.blog-img:hover         { transform: scale(1.04); }
+
+/* ── Testimonials ── */
+.card-testimonial          { transition: transform .2s; }
+.card-testimonial:hover    { transform: translateY(-3px); }
+.quote-mark                { font-size: 2.5rem; line-height: 1; }
+.avatar-sm                 { width: 40px; height: 40px; }
+
+/* ── Contact ── */
+.contact-glow { width: 500px; height: 500px; background: radial-gradient(circle, rgba(99,102,241,.15) 0%, transparent 70%); top: -150px; right: -100px; pointer-events: none; }
+.input-padded { padding: .75rem 1rem; font-size: .9rem; }
+
+/* ── Footer ── */
+.footer-logo-mark { width: 18px; height: 18px; background: #6366f1; border-radius: 3px; display: inline-block; }
+.nav-logo-mark    { width: 22px; height: 22px; background: #0a0a0a; border-radius: 4px; display: inline-block; }
+.footer-link      { color: rgba(255,255,255,.4); transition: color .15s; }
+.footer-link:hover{ color: white; }
+</style>

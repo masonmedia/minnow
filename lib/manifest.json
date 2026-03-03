@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/",
+    "component": "./pages/index.html"
+  },
+  {
+    "path": "/about",
+    "component": "./pages/about.html"
+  },
+  {
+    "path": "/blog",
+    "component": "./pages/blog/index.html"
+  },
+  {
+    "path": "/blog-remote",
+    "component": "./pages/blog-remote/index.html"
+  },
+  {
+    "path": "/templates",
+    "component": "./pages/templates/index.html"
+  },
+  {
+    "path": "/templates/1",
+    "component": "./pages/templates/1.html"
+  },
+  {
+    "path": "/templates/2",
+    "component": "./pages/templates/2.html"
+  },
+  {
+    "path": "/templates/3",
+    "component": "./pages/templates/3.html"
+  },
+  {
+    "path": "/blog-remote/:slug",
+    "component": "./pages/blog-remote/[slug].html"
+  },
+  {
+    "path": "/blog/:slug",
+    "component": "./pages/blog/[slug].html"
+  }
+]

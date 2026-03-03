@@ -1,0 +1,397 @@
+<template>
+<div>
+
+    <!-- ── Nav ── -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
+        <div class="container py-1">
+            <a href="/" class="navbar-brand fw-bold fs-5 text-dark text-decoration-none d-flex align-items-center gap-2">
+                <span style="color:#f59e0b">★</span>
+                Northstar<span style="color:#2563eb">Digital</span>
+            </a>
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nsNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nsNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-1">
+                    <li class="nav-item"><a href="#services" class="nav-link text-secondary fw-medium px-3">Services</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link text-secondary fw-medium px-3">Work</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-secondary fw-medium px-3">About</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link text-secondary fw-medium px-3">Clients</a></li>
+                    <li class="nav-item ms-2">
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4 fw-semibold">Let's Talk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <section class="position-relative overflow-hidden d-flex align-items-center" style="min-height:92vh;background:#f8faff">
+        <div class="position-absolute rounded-circle" style="width:520px;height:520px;background:rgba(37,99,235,0.07);filter:blur(80px);top:-120px;right:4%;pointer-events:none"></div>
+        <div class="position-absolute rounded-circle" style="width:360px;height:360px;background:rgba(245,158,11,0.07);filter:blur(70px);top:35%;left:-80px;pointer-events:none"></div>
+        <div class="container position-relative py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-4 fw-semibold" style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.15);color:#2563eb">
+                        <span class="rounded-circle" style="width:6px;height:6px;background:#2563eb;animation:ns-pulse 2s infinite;display:inline-block"></span>
+                        Premium Digital Studio
+                    </div>
+                    <h1 class="fw-bold lh-1 mb-4" style="font-family:'DM Serif Display',serif;font-size:clamp(2.6rem,5vw,4rem);letter-spacing:-.03em;color:#0f172a">
+                        Build Something<br><em style="color:#2563eb">Exceptional</em>
+                    </h1>
+                    <p class="fs-5 text-secondary mb-5 lh-lg">
+                        We design and develop premium digital products that feel effortless to use and impossible to forget.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap mb-5">
+                        <a href="#contact" class="btn btn-primary btn-lg px-5 rounded-pill fw-semibold" style="box-shadow:0 4px 14px rgba(37,99,235,.35)">Get Started →</a>
+                        <a href="#services" class="btn btn-outline-secondary btn-lg px-5 rounded-pill fw-semibold">Learn More</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="text-center">
+                            <div class="fw-bold fs-3" style="font-family:'DM Serif Display',serif;color:#0f172a">48+</div>
+                            <div class="text-muted small">Projects</div>
+                        </div>
+                        <div style="width:1px;height:40px;background:#e2e8f0"></div>
+                        <div class="text-center">
+                            <div class="fw-bold fs-3" style="font-family:'DM Serif Display',serif;color:#0f172a">12</div>
+                            <div class="text-muted small">Industries</div>
+                        </div>
+                        <div style="width:1px;height:40px;background:#e2e8f0"></div>
+                        <div class="text-center">
+                            <div class="fw-bold fs-3" style="font-family:'DM Serif Display',serif;color:#0f172a">98%</div>
+                            <div class="text-muted small">Retention</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center position-relative" style="height:420px">
+                    <div class="position-absolute rounded-circle" style="width:340px;height:340px;background:linear-gradient(135deg,rgba(37,99,235,.1),rgba(168,85,247,.08));animation:ns-morph 10s ease-in-out infinite"></div>
+                    <div class="card border-0 shadow-lg rounded-4 p-4 position-absolute bg-white" style="top:0;left:10%;animation:ns-float1 6s ease-in-out infinite;min-width:170px;z-index:2">
+                        <div class="fs-4 mb-2" style="color:#2563eb">⬡</div>
+                        <div class="fw-semibold small">Design System</div>
+                        <div class="text-muted" style="font-size:.75rem">Figma → Production</div>
+                    </div>
+                    <div class="card border-0 shadow-lg rounded-4 p-4 position-absolute bg-white" style="top:35%;right:0;animation:ns-float2 7s ease-in-out infinite;min-width:170px;z-index:2">
+                        <div class="fs-4 mb-2" style="color:#f59e0b">◈</div>
+                        <div class="fw-semibold small">Performance</div>
+                        <div class="text-muted" style="font-size:.75rem">99 Lighthouse score</div>
+                    </div>
+                    <div class="card border-0 shadow-lg rounded-4 p-4 position-absolute bg-white" style="bottom:0;left:25%;animation:ns-float3 5.5s ease-in-out infinite;min-width:170px;z-index:2">
+                        <div class="fs-4 mb-2" style="color:#2563eb">◎</div>
+                        <div class="fw-semibold small">On Time</div>
+                        <div class="text-muted" style="font-size:.75rem">Every single time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Marquee ── -->
+    <div class="overflow-hidden border-top border-bottom py-3 bg-white">
+        <div class="d-flex align-items-center gap-4 fw-semibold text-uppercase" style="font-size:.72rem;letter-spacing:.1em;white-space:nowrap;width:max-content;animation:ns-marquee 22s linear infinite">
+            <span class="text-secondary">Design</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Development</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Strategy</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Branding</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Motion</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Architecture</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Design</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Development</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Strategy</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Branding</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Motion</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+            <span class="text-secondary">Architecture</span><span style="color:#f59e0b;font-size:.55rem">★</span>
+        </div>
+    </div>
+
+    <!-- ── Services ── -->
+    <section class="py-5 bg-light" id="services">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <div class="d-inline-block rounded-pill px-3 py-1 mb-3 fw-bold text-uppercase" style="font-size:.68rem;letter-spacing:.12em;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.15);color:#2563eb">What We Do</div>
+                    <h2 class="fw-bold mb-0" style="font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);color:#0f172a">Craft at every layer<br>of the stack</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="bg-white rounded-4 p-5 h-100 d-flex flex-column shadow-sm position-relative" style="transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,.09)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                        <div class="position-absolute text-muted fw-bold" style="top:1.5rem;right:1.5rem;font-size:.68rem;letter-spacing:.05em">01</div>
+                        <div class="fs-1 mb-3" style="color:#2563eb">◻</div>
+                        <h3 class="fw-bold mb-3" style="color:#0f172a">Design</h3>
+                        <p class="text-muted mb-4">Elegant UI systems built for clarity and scale. From first sketch to pixel-perfect handoff.</p>
+                        <ul class="list-unstyled text-muted small mb-4">
+                            <li class="py-2 border-bottom">UI / UX Design</li>
+                            <li class="py-2 border-bottom">Design Systems</li>
+                            <li class="py-2">Prototyping &amp; Handoff</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto fw-semibold text-decoration-none" style="color:#2563eb;font-size:.875rem">Start a project →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 p-5 h-100 d-flex flex-column position-relative" style="background:#0f172a;transition:transform .2s" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+                        <div class="position-absolute fw-bold" style="top:1.5rem;right:1.5rem;font-size:.68rem;letter-spacing:.05em;color:rgba(255,255,255,.2)">02</div>
+                        <div class="fs-1 mb-3" style="color:#f59e0b">◈</div>
+                        <h3 class="fw-bold mb-3 text-white">Development</h3>
+                        <p class="mb-4" style="color:rgba(255,255,255,.65)">Modern web applications engineered for performance, accessibility, and long-term maintainability.</p>
+                        <ul class="list-unstyled small mb-4" style="color:rgba(255,255,255,.5)">
+                            <li class="py-2" style="border-bottom:1px solid rgba(255,255,255,.08)">Web Applications</li>
+                            <li class="py-2" style="border-bottom:1px solid rgba(255,255,255,.08)">API Integration</li>
+                            <li class="py-2">Performance Optimization</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto fw-semibold text-decoration-none" style="color:rgba(255,255,255,.7);font-size:.875rem">Start a project →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white rounded-4 p-5 h-100 d-flex flex-column shadow-sm position-relative" style="transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,.09)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                        <div class="position-absolute text-muted fw-bold" style="top:1.5rem;right:1.5rem;font-size:.68rem;letter-spacing:.05em">03</div>
+                        <div class="fs-1 mb-3" style="color:#2563eb">◎</div>
+                        <h3 class="fw-bold mb-3" style="color:#0f172a">Strategy</h3>
+                        <p class="text-muted mb-4">Product direction that aligns teams and markets. We help you build the right thing, first.</p>
+                        <ul class="list-unstyled text-muted small mb-4">
+                            <li class="py-2 border-bottom">Product Roadmapping</li>
+                            <li class="py-2 border-bottom">Market Positioning</li>
+                            <li class="py-2">Technical Advisory</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto fw-semibold text-decoration-none" style="color:#2563eb;font-size:.875rem">Start a project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Work ── -->
+    <section class="py-5 bg-white" id="work">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+                <div>
+                    <div class="d-inline-block rounded-pill px-3 py-1 mb-3 fw-bold text-uppercase" style="font-size:.68rem;letter-spacing:.12em;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.15);color:#2563eb">Selected Work</div>
+                    <h2 class="fw-bold mb-0" style="font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);color:#0f172a">Recent projects</h2>
+                </div>
+                <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 fw-semibold">See All Work</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-7">
+                    <div class="rounded-4 overflow-hidden position-relative" style="height:380px;background:linear-gradient(135deg,#0f172a,#1e3a5f);cursor:pointer;transition:transform .2s" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform=''">
+                        <div class="position-absolute bottom-0 start-0 p-4 p-lg-5">
+                            <span class="badge rounded-pill mb-3 fw-normal" style="background:rgba(255,255,255,.15);color:white">SaaS Platform</span>
+                            <h3 class="text-white fw-bold mb-1">Vantage Analytics</h3>
+                            <p class="mb-0" style="color:rgba(255,255,255,.55)">Data visualization for enterprise teams</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex flex-column gap-4">
+                    <div class="rounded-4 overflow-hidden position-relative flex-grow-1" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);cursor:pointer;min-height:170px;transition:transform .2s" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform=''">
+                        <div class="position-absolute bottom-0 start-0 p-4">
+                            <span class="badge rounded-pill mb-2 bg-primary fw-normal">E-commerce</span>
+                            <h4 class="fw-bold mb-0" style="color:#0f172a">Maison Store</h4>
+                            <p class="text-muted small mb-0">Luxury retail experience</p>
+                        </div>
+                    </div>
+                    <div class="rounded-4 overflow-hidden position-relative flex-grow-1" style="background:linear-gradient(135deg,#fffbeb,#fef3c7);cursor:pointer;min-height:170px;transition:transform .2s" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform=''">
+                        <div class="position-absolute bottom-0 start-0 p-4">
+                            <span class="badge rounded-pill mb-2 fw-normal" style="background:#f59e0b;color:white">Mobile App</span>
+                            <h4 class="fw-bold mb-0" style="color:#0f172a">Pulse Health</h4>
+                            <p class="text-muted small mb-0">Patient engagement platform</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── About ── -->
+    <section class="py-5" id="about" style="background:#f8faff">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <div class="d-inline-block rounded-pill px-3 py-1 mb-3 fw-bold text-uppercase" style="font-size:.68rem;letter-spacing:.12em;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.15);color:#2563eb">About Us</div>
+                    <h2 class="fw-bold mb-4" style="font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);color:#0f172a">Designers and engineers who care deeply</h2>
+                    <p class="fs-5 text-secondary mb-4 lh-lg">We're a focused studio obsessed with simplicity, performance, and beautiful digital experiences.</p>
+                    <p class="text-secondary mb-5">We work with startups and established companies who believe great design is a competitive advantage — not an afterthought.</p>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="text-center">
+                            <div class="fw-bold fs-2" style="font-family:'DM Serif Display',serif;color:#0f172a">2018</div>
+                            <div class="text-muted small">Founded</div>
+                        </div>
+                        <div style="width:1px;height:40px;background:#e2e8f0"></div>
+                        <div class="text-center">
+                            <div class="fw-bold fs-2" style="font-family:'DM Serif Display',serif;color:#0f172a">8</div>
+                            <div class="text-muted small">Core Team</div>
+                        </div>
+                        <div style="width:1px;height:40px;background:#e2e8f0"></div>
+                        <div class="text-center">
+                            <div class="fw-bold fs-2" style="font-family:'DM Serif Display',serif;color:#0f172a">3</div>
+                            <div class="text-muted small">Continents</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="bg-white rounded-4 p-4 h-100 shadow-sm" style="transition:transform .2s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+                                <div class="fs-2 mb-3">⚡</div>
+                                <h5 class="fw-bold mb-2" style="color:#0f172a">Fast by default</h5>
+                                <p class="text-muted small mb-0">Performance engineered in from day one.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="rounded-4 p-4 h-100" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);transition:transform .2s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+                                <div class="fs-2 mb-3">🎯</div>
+                                <h5 class="fw-bold mb-2" style="color:#0f172a">Focused scope</h5>
+                                <p class="text-muted small mb-0">We take on projects we're proud to put our name on.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="rounded-4 p-4 h-100" style="background:#0f172a;transition:transform .2s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+                                <div class="fs-2 mb-3">🤝</div>
+                                <h5 class="fw-bold mb-2 text-white">True partners</h5>
+                                <p class="small mb-0" style="color:rgba(255,255,255,.55)">We care about outcomes, not just deliverables.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="rounded-4 p-4 h-100" style="background:linear-gradient(135deg,#fffbeb,#fef3c7);transition:transform .2s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+                                <div class="fs-2 mb-3">✦</div>
+                                <h5 class="fw-bold mb-2" style="color:#0f172a">Craft first</h5>
+                                <p class="text-muted small mb-0">Every pixel and line made with intention.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="py-5 bg-light" id="testimonials">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <div class="d-inline-block rounded-pill px-3 py-1 mb-3 fw-bold text-uppercase" style="font-size:.68rem;letter-spacing:.12em;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.15);color:#2563eb">Client Words</div>
+                <h2 class="fw-bold" style="font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);color:#0f172a">What people say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="bg-white rounded-4 p-4 h-100 shadow-sm d-flex flex-column" style="transition:transform .2s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+                        <div class="fw-bold mb-3" style="font-family:'DM Serif Display',serif;font-size:3.5rem;line-height:1;color:#2563eb;opacity:.25">"</div>
+                        <p class="fw-medium mb-4 flex-grow-1" style="color:#0f172a">An exceptional partner that truly understands modern product design.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white flex-shrink-0" style="width:38px;height:38px;background:linear-gradient(135deg,#2563eb,#3b82f6);font-size:.875rem">S</div>
+                            <div>
+                                <div class="fw-semibold small" style="color:#0f172a">Sarah Chen</div>
+                                <div class="text-muted" style="font-size:.75rem">CEO, Venture Co</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white rounded-4 p-4 h-100 shadow-sm d-flex flex-column" style="transition:transform .2s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+                        <div class="fw-bold mb-3" style="font-family:'DM Serif Display',serif;font-size:3.5rem;line-height:1;color:#f59e0b;opacity:.4">"</div>
+                        <p class="fw-medium mb-4 flex-grow-1" style="color:#0f172a">They shipped our rebrand in half the time we expected — and it was flawless.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white flex-shrink-0" style="width:38px;height:38px;background:linear-gradient(135deg,#f59e0b,#ef4444);font-size:.875rem">M</div>
+                            <div>
+                                <div class="fw-semibold small" style="color:#0f172a">Marcus Webb</div>
+                                <div class="text-muted" style="font-size:.75rem">CPO, Helix Systems</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white rounded-4 p-4 h-100 shadow-sm d-flex flex-column" style="transition:transform .2s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+                        <div class="fw-bold mb-3" style="font-family:'DM Serif Display',serif;font-size:3.5rem;line-height:1;color:#2563eb;opacity:.25">"</div>
+                        <p class="fw-medium mb-4 flex-grow-1" style="color:#0f172a">The best studio we've worked with. They think beyond the brief every time.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold text-white flex-shrink-0" style="width:38px;height:38px;background:linear-gradient(135deg,#f59e0b,#2563eb);font-size:.875rem">A</div>
+                            <div>
+                                <div class="fw-semibold small" style="color:#0f172a">Aiko Tanaka</div>
+                                <div class="text-muted" style="font-size:.75rem">Founder, Dusk Studio</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="py-5 position-relative overflow-hidden" id="contact" style="background:linear-gradient(135deg,#0f172a,#1e3a5f)">
+        <div class="position-absolute rounded-circle" style="width:600px;height:600px;background:radial-gradient(circle,rgba(37,99,235,.15) 0%,transparent 70%);top:-200px;right:-100px;pointer-events:none"></div>
+        <div class="container py-5 position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="d-inline-block rounded-pill px-3 py-1 mb-3 fw-bold text-uppercase" style="font-size:.68rem;letter-spacing:.12em;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.9)">Get In Touch</div>
+                    <h2 class="fw-bold text-white mb-4" style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3rem)">Let's Work<br>Together</h2>
+                    <p class="fs-5 mb-5" style="color:rgba(255,255,255,.6)">Tell us about your project. We typically respond within one business day.</p>
+                    <div class="bg-white rounded-4 p-4 p-lg-5 text-start shadow-lg">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold small" style="color:#0f172a">Name</label>
+                                <input type="text" class="form-control rounded-3 border-2" style="padding:.75rem 1rem;font-size:.9rem" placeholder="Jane Smith">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold small" style="color:#0f172a">Email</label>
+                                <input type="email" class="form-control rounded-3 border-2" style="padding:.75rem 1rem;font-size:.9rem" placeholder="jane@company.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold small" style="color:#0f172a">Company</label>
+                                <input type="text" class="form-control rounded-3 border-2" style="padding:.75rem 1rem;font-size:.9rem" placeholder="Your company">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold small" style="color:#0f172a">Project details</label>
+                                <textarea class="form-control rounded-3 border-2" rows="4" style="padding:.75rem 1rem;font-size:.9rem" placeholder="What are you building? What's your timeline?"></textarea>
+                            </div>
+                            <div class="col-12 pt-2">
+                                <button class="btn btn-primary btn-lg w-100 rounded-3 fw-semibold py-3" style="box-shadow:0 4px 14px rgba(37,99,235,.35)">Send Message →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="py-4 border-top" style="background:#0f172a">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-4">
+                    <div class="fw-bold fs-5 text-white d-flex align-items-center gap-2">
+                        <span style="color:#f59e0b">★</span>Northstar<span style="color:#2563eb">Digital</span>
+                    </div>
+                    <div class="small" style="color:rgba(255,255,255,.4)">Premium digital studio</div>
+                </div>
+                <div class="col-md-4 text-center d-flex justify-content-center gap-4">
+                    <a href="#services" class="text-decoration-none small" style="color:rgba(255,255,255,.45)" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,.45)'">Services</a>
+                    <a href="#work" class="text-decoration-none small" style="color:rgba(255,255,255,.45)" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,.45)'">Work</a>
+                    <a href="#about" class="text-decoration-none small" style="color:rgba(255,255,255,.45)" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,.45)'">About</a>
+                    <a href="#contact" class="text-decoration-none small" style="color:rgba(255,255,255,.45)" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,.45)'">Contact</a>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="small" style="color:rgba(255,255,255,.35)">© 2026 Northstar Digital. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</template>
+<script>
+({
+    meta: {
+        title:       'Northstar Digital — Premium Digital Studio',
+        description: 'We design and develop premium digital products that feel effortless to use and impossible to forget.',
+        siteName:    'Northstar Digital',
+        twitterCard: 'summary_large_image',
+    },
+    data() { return {} }
+})
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+body { font-family: 'DM Sans', system-ui, sans-serif; }
+@keyframes ns-pulse   { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.4)} }
+@keyframes ns-marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+@keyframes ns-float1  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+@keyframes ns-float2  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+@keyframes ns-float3  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes ns-morph   { 0%,100%{border-radius:60% 40% 55% 45%/45% 55% 40% 60%} 50%{border-radius:40% 60% 45% 55%/55% 40% 60% 45%} }
+</style>

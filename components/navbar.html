@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <nav class="navbar fixed-top navbar-expand-lg bg-white border-bottom">
         <div class="container">
             <a href="/" class="navbar-brand fw-bold text-primary">Mini Framework</a>
 
@@ -21,6 +21,9 @@
                     <li class="nav-item">
                         <a href="/blog-remote" class="nav-link px-3 rounded {{blogRemoteActive}}">Remote Blog</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/templates" class="nav-link px-3 rounded {{templatesActive}}">Templates</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -35,7 +38,8 @@
             homeActive:       p === '/' ? 'active' : '',
             aboutActive:      p === '/about' ? 'active' : '',
             blogActive:       p === '/blog' || p.startsWith('/blog/') ? 'active' : '',
-            blogRemoteActive: p === '/blog-remote' || p.startsWith('/blog-remote/') ? 'active' : ''
+            blogRemoteActive: p === '/blog-remote' || p.startsWith('/blog-remote/') ? 'active' : '',
+            templatesActive:  p === '/templates' || p.startsWith('/templates/') ? 'active' : ''
         }
     }
 })

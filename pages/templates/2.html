@@ -1,0 +1,510 @@
+<template>
+<div>
+
+    <!-- ── Nav ── -->
+    <nav class="navbar navbar-expand-lg sticky-top nav-blur">
+        <div class="container py-1">
+            <a href="/" class="navbar-brand fw-bold text-decoration-none ls-tighter text-apple-dark">
+                dig<span class="text-apple-blue">.</span>
+            </a>
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#digNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="digNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-1">
+                    <li class="nav-item"><a href="#who" class="nav-link fw-medium px-3 fs-sm text-apple-gray">Who we are</a></li>
+                    <li class="nav-item"><a href="#what" class="nav-link fw-medium px-3 fs-sm text-apple-gray">What we do</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link fw-medium px-3 fs-sm text-apple-gray">Services</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link fw-medium px-3 fs-sm text-apple-gray">Contact</a></li>
+                    <li class="nav-item ms-2">
+                        <a href="#contact" class="btn rounded-pill fw-semibold text-white px-4 fs-sm btn-apple-blue">Get started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <section class="position-relative overflow-hidden bg-black min-vh-100">
+        <div class="position-absolute top-0 start-0 w-100 h-100">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1800&q=80" alt="" class="w-100 h-100 object-fit-cover opacity-45">
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-hero-dark"></div>
+        <div class="container position-relative d-flex flex-column justify-content-center text-center hero-content" style="z-index:2">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-5 badge-glass-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="#34d399" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8"/></svg>
+                        <span class="text-uppercase fw-semibold text-white text-opacity-75 fs-badge ls-wide">Now open for 2026 projects</span>
+                    </div>
+                    <h1 class="fw-bold text-white mb-5 display-hero ls-tightest">
+                        Design that<br>changes<br><span class="text-gradient-blue">everything.</span>
+                    </h1>
+                    <p class="mx-auto mb-5 text-white text-opacity-50 display-hero-sub hero-lead-center">
+                        We build digital products and brand identities for companies that refuse to blend in.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#what" class="btn btn-lg rounded-pill fw-semibold px-5 text-white btn-apple-blue">See our work</a>
+                        <a href="#who" class="btn btn-lg rounded-pill fw-semibold px-5 btn-glass-white">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0 start-50 translate-middle-x pb-4 scroll-cue text-white text-opacity-25">
+                <div class="d-flex flex-column align-items-center gap-1 text-uppercase ls-wide fs-badge">
+                    <span>Scroll</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Who we are ── -->
+    <section id="who" class="bg-black">
+        <div class="position-relative overflow-hidden who-section">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1800&q=80" alt="Studio" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover opacity-35">
+            <div class="position-absolute top-0 start-0 w-100 h-100 overlay-who"></div>
+            <div class="container position-relative d-flex align-items-center who-section" style="z-index:1">
+                <div class="col-lg-7 py-5">
+                    <div class="fw-bold text-uppercase mb-4 text-apple-blue fs-label ls-wider">Who we are</div>
+                    <h2 class="fw-bold text-white mb-5 display-section-xl ls-tighter">We are the<br>unreasonable<br>ones.</h2>
+                    <p class="mb-4 lh-lg text-white text-opacity-75 who-lead">Dig is a digital product and brand studio operating at the intersection of strategy, design, and technology. We believe truly great work comes from refusing to settle.</p>
+                    <p class="lh-lg who-lead text-white text-opacity-75">Founded in 2018, our team of 12 works with founders, CMOs, and product leaders across three continents.</p>
+                    <div class="d-flex gap-5 mt-5 pt-2">
+                        <div>
+                            <div class="fw-bold text-white fs-stat-lg ls-tighter lh-1">80+</div>
+                            <div class="text-uppercase ls-wide fs-xs mt-1 text-light">Brands built</div>
+                        </div>
+                        <div class="stat-divider-dark"></div>
+                        <div>
+                            <div class="fw-bold text-white fs-stat-lg ls-tighter lh-1">12</div>
+                            <div class="text-uppercase ls-wide fs-xs mt-1 text-light">Team members</div>
+                        </div>
+                        <div class="stat-divider-dark"></div>
+                        <div>
+                            <div class="fw-bold text-white fs-stat-lg ls-tighter lh-1">6yr</div>
+                            <div class="text-uppercase ls-wide fs-xs mt-1 text-light">In studio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── What we do ── -->
+    <section id="what" class="bg-black section-pad">
+        <div class="container">
+            <div class="text-center mb-5 pb-3">
+                <div class="fw-bold text-uppercase mb-3 text-apple-blue fs-label ls-wider">What we do</div>
+                <h2 class="fw-bold text-white display-section ls-tighter">Work worth showing.</h2>
+            </div>
+
+            <!-- Feature card 1 — full width -->
+            <div class="rounded-4 overflow-hidden position-relative mb-4 card-feature-lg">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1600&q=80" alt="Luma" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+                <div class="position-absolute top-0 start-0 w-100 h-100 overlay-card-right"></div>
+                <div class="position-relative d-flex flex-column justify-content-end p-5 h-100 card-feature-lg" style="z-index:1">
+                    <span class="badge rounded-pill fw-normal mb-3 align-self-start badge-glass-sm px-3 py-2">Brand Identity</span>
+                    <h3 class="fw-bold text-white mb-2 display-card ls-tight card-title-max">Luma Creative — A brand built for the next decade.</h3>
+                    <p class="text-white text-opacity-50 fs-sm card-desc-max mb-0">Full identity system, verbal guidelines, and launch campaign.</p>
+                </div>
+            </div>
+
+            <!-- Two cards -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <div class="rounded-4 overflow-hidden position-relative card-feature-md">
+                        <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=900&q=80" alt="Orbit" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-card-up"></div>
+                        <div class="position-relative d-flex flex-column justify-content-end p-4 h-100 card-feature-md" style="z-index:1">
+                            <span class="badge rounded-pill fw-normal mb-2 align-self-start badge-glass-sm">Web Design</span>
+                            <h4 class="fw-bold text-white mb-1 fs-card-title ls-tight">Orbit Finance</h4>
+                            <p class="text-white text-opacity-50 fs-xs mb-0">Product design system + marketing site</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rounded-4 overflow-hidden position-relative card-feature-md">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=900&q=80" alt="Dusk" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-card-up"></div>
+                        <div class="position-relative d-flex flex-column justify-content-end p-4 h-100 card-feature-md" style="z-index:1">
+                            <span class="badge rounded-pill fw-normal mb-2 align-self-start badge-glass-sm">Campaign</span>
+                            <h4 class="fw-bold text-white mb-1 fs-card-title ls-tight">Dusk Apparel</h4>
+                            <p class="text-white text-opacity-50 fs-xs mb-0">Art direction and seasonal campaign</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three cards -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden position-relative card-feature-sm">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=700&q=80" alt="Prism" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-card-up-lg"></div>
+                        <div class="position-relative d-flex flex-column justify-content-end p-4 h-100 card-feature-sm" style="z-index:1">
+                            <span class="badge rounded-pill fw-normal mb-2 align-self-start badge-glass-sm">Motion</span>
+                            <h5 class="fw-bold text-white mb-0 ls-tight">Prism Labs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden position-relative card-feature-sm">
+                        <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?w=700&q=80" alt="Soleil" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-card-up-lg"></div>
+                        <div class="position-relative d-flex flex-column justify-content-end p-4 h-100 card-feature-sm" style="z-index:1">
+                            <span class="badge rounded-pill fw-normal mb-2 align-self-start badge-glass-sm">Photography</span>
+                            <h5 class="fw-bold text-white mb-0 ls-tight">Soleil Hotel</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden position-relative card-feature-sm">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=700&q=80" alt="Arc" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-card-up-lg"></div>
+                        <div class="position-relative d-flex flex-column justify-content-end p-4 h-100 card-feature-sm" style="z-index:1">
+                            <span class="badge rounded-pill fw-normal mb-2 align-self-start badge-glass-sm">UX</span>
+                            <h5 class="fw-bold text-white mb-0 ls-tight">Arc Platform</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Services ── -->
+    <section id="services" class="bg-black section-pad border-top border-white border-opacity-10">
+        <div class="container">
+            <div class="text-center mb-5 pb-3">
+                <div class="fw-bold text-uppercase mb-3 text-apple-blue fs-label ls-wider">Services</div>
+                <h2 class="fw-bold text-white display-section ls-tighter">Every discipline.<br>One studio.</h2>
+            </div>
+            <div class="d-flex flex-column gap-3">
+
+                <!-- Row 1 -->
+                <div class="row g-3">
+                    <div class="col-md-8">
+                        <div class="rounded-4 p-5 h-100 position-relative overflow-hidden bg-apple-card service-card-min">
+                            <div class="position-absolute glow-blue-br"></div>
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4 icon-circle-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071e3" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/></svg>
+                            </div>
+                            <h3 class="fw-bold text-white mb-3 display-service ls-tight">Brand Identity</h3>
+                            <p class="text-white text-opacity-50 lh-lg service-desc">We build brands that outlast trends — from visual language and logo systems to verbal identity and brand guidelines that scale.</p>
+                            <div class="d-flex gap-2 mt-4 flex-wrap">
+                                <span class="badge rounded-pill badge-service-tag">Logo &amp; Mark</span>
+                                <span class="badge rounded-pill badge-service-tag">Brand Guidelines</span>
+                                <span class="badge rounded-pill badge-service-tag">Verbal Identity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="rounded-4 overflow-hidden h-100 service-card-min">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Brand" class="w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 — reversed -->
+                <div class="row g-3">
+                    <div class="col-md-4 order-md-1">
+                        <div class="rounded-4 overflow-hidden h-100 service-card-min">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="Web" class="w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-md-8 order-md-2">
+                        <div class="rounded-4 p-5 h-100 position-relative overflow-hidden bg-apple-card service-card-min">
+                            <div class="position-absolute glow-sky-bl"></div>
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4 icon-circle-sky">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#34aadc" viewBox="0 0 16 16"><path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/></svg>
+                            </div>
+                            <h3 class="fw-bold text-white mb-3 display-service ls-tight">Web &amp; Product Design</h3>
+                            <p class="text-white text-opacity-50 lh-lg service-desc">Websites and digital products that feel inevitable. We design every pixel with intent and build with the engineers who'll ship it.</p>
+                            <div class="d-flex gap-2 mt-4 flex-wrap">
+                                <span class="badge rounded-pill badge-service-tag">UI / UX</span>
+                                <span class="badge rounded-pill badge-service-tag">Design Systems</span>
+                                <span class="badge rounded-pill badge-service-tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 — two equal -->
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="rounded-4 p-5 h-100 position-relative overflow-hidden bg-apple-card service-card-min-sm">
+                            <div class="position-absolute glow-green-tr"></div>
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4 icon-circle-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#34d399" viewBox="0 0 16 16"><path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/><path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/></svg>
+                            </div>
+                            <h3 class="fw-bold text-white mb-3 fs-service-sm ls-tight">Art Direction</h3>
+                            <p class="text-white text-opacity-50 fs-sm lh-lg">Visual strategy for campaigns, editorial, and content that earns attention.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="rounded-4 p-5 h-100 position-relative overflow-hidden bg-apple-card service-card-min-sm">
+                            <div class="position-absolute glow-amber-tl"></div>
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4 icon-circle-amber">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fbbf24" viewBox="0 0 16 16"><path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
+                            </div>
+                            <h3 class="fw-bold text-white mb-3 fs-service-sm ls-tight">Motion &amp; Film</h3>
+                            <p class="text-white text-opacity-50 fs-sm lh-lg">Brand films, motion graphics, and animated assets built to stop the scroll.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="bg-black section-pad border-top border-white border-opacity-10">
+        <div class="container">
+            <div class="text-center mb-5 pb-3">
+                <div class="fw-bold text-uppercase mb-3 text-apple-blue fs-label ls-wider">Testimonials</div>
+                <h2 class="fw-bold text-white display-section ls-tighter">Words from<br>the work.</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="rounded-4 p-5 h-100 d-flex flex-column bg-apple-card border border-white border-opacity-10 card-testimonial-dark">
+                        <div class="mb-4 fw-bold text-apple-blue quote-mark-lg lh-1 opacity-50">"</div>
+                        <p class="fw-medium flex-grow-1 mb-5 text-white text-opacity-75 lh-lg fs-sm">Dig didn't just design our brand — they helped us understand what we actually stand for. That clarity changed our whole go-to-market strategy.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sophie" class="rounded-circle object-fit-cover avatar-md flex-shrink-0">
+                            <div>
+                                <div class="fw-semibold text-white fs-sm">Sophie Laurent</div>
+                                <div class="fs-xs text-white text-opacity-25">Founder, Luma Creative</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 p-5 h-100 d-flex flex-column bg-apple-card border border-white border-opacity-10 card-testimonial-dark">
+                        <div class="mb-4 fw-bold text-apple-blue quote-mark-lg lh-1 opacity-50">"</div>
+                        <p class="fw-medium flex-grow-1 mb-5 text-white text-opacity-75 lh-lg fs-sm">The site outperforms our old one by every metric. But more than that — it finally looks and feels like us. No other agency got close.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Marcus" class="rounded-circle object-fit-cover avatar-md flex-shrink-0">
+                            <div>
+                                <div class="fw-semibold text-white fs-sm">Marcus Okafor</div>
+                                <div class="fs-xs text-white text-opacity-25">CEO, Orbit Finance</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 p-5 h-100 d-flex flex-column bg-apple-card border border-white border-opacity-10 card-testimonial-dark">
+                        <div class="mb-4 fw-bold text-apple-blue quote-mark-lg lh-1 opacity-50">"</div>
+                        <p class="fw-medium flex-grow-1 mb-5 text-white text-opacity-75 lh-lg fs-sm">They pushed back on our brief. At first I hated it. Three months later I understood — they were right about everything, and the work shows it.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Priya" class="rounded-circle object-fit-cover avatar-md flex-shrink-0">
+                            <div>
+                                <div class="fw-semibold text-white fs-sm">Priya Nair</div>
+                                <div class="fs-xs text-white text-opacity-25">CMO, Dusk Apparel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section id="contact" class="position-relative overflow-hidden bg-black section-pad border-top border-white border-opacity-10">
+        <div class="position-absolute top-0 start-0 w-100 h-100">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80" alt="" class="w-100 h-100 object-fit-cover opacity-25">
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-contact"></div>
+        <div class="container position-relative text-center" style="z-index:2">
+            <div class="fw-bold text-uppercase mb-4 text-apple-blue fs-label ls-wider">Start a project</div>
+            <h2 class="fw-bold text-white mb-4 display-contact ls-tightest">Ready to build<br>something<br><span class="text-gradient-blue">remarkable?</span></h2>
+            <p class="mx-auto mb-5 text-white text-opacity-50 contact-lead lh-lg">Tell us about your project. We take on a limited number of engagements each quarter — reach out early.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="rounded-4 p-4 p-lg-5 text-start form-card-dark">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold fs-xs text-white text-opacity-50">Name</label>
+                                <input type="text" class="form-control rounded-3 input-dark" placeholder="Jane Smith">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold fs-xs text-white text-opacity-50">Email</label>
+                                <input type="email" class="form-control rounded-3 input-dark" placeholder="jane@company.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold fs-xs text-white text-opacity-50">Service</label>
+                                <select class="form-select rounded-3 input-dark">
+                                    <option>Brand Identity</option>
+                                    <option>Web &amp; Product Design</option>
+                                    <option>Art Direction</option>
+                                    <option>Motion &amp; Film</option>
+                                    <option>Full engagement</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold fs-xs text-white text-opacity-50">Tell us about your project</label>
+                                <textarea class="form-control rounded-3 input-dark" rows="4" placeholder="What are you building? Timeline, budget, goals."></textarea>
+                            </div>
+                            <div class="col-12 pt-1">
+                                <button class="btn btn-lg w-100 rounded-3 fw-semibold py-3 text-white btn-apple-blue">Send message →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="bg-black border-top border-white border-opacity-10 py-footer">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-4">
+                    <div class="fw-bold text-white ls-tighter fs-nav-brand">dig<span class="text-apple-blue">.</span></div>
+                    <div class="fs-xs text-white text-opacity-25 mt-1">Digital product &amp; brand studio</div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center gap-4">
+                    <a href="#who" class="text-decoration-none fs-xs footer-link-dark">Who</a>
+                    <a href="#what" class="text-decoration-none fs-xs footer-link-dark">Work</a>
+                    <a href="#services" class="text-decoration-none fs-xs footer-link-dark">Services</a>
+                    <a href="#contact" class="text-decoration-none fs-xs footer-link-dark">Contact</a>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="fs-xs text-white text-opacity-25">© 2026 Dig Studio. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</template>
+
+<script>
+({
+    meta: {
+        title:       'Dig Studio — Digital Product & Brand Design',
+        description: 'We build digital products and brand identities for companies that refuse to blend in.',
+        siteName:    'Dig Studio',
+        twitterCard: 'summary_large_image',
+    },
+    data() { return {} }
+})
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ── Base ── */
+body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+/* ── Colour tokens ── */
+.text-apple-blue  { color: #0071e3; }
+.text-apple-dark  { color: #1d1d1f; }
+.text-apple-gray  { color: #6e6e73; }
+.bg-apple-card    { background: #1d1d1f; }
+.text-gradient-blue {
+    background: linear-gradient(135deg, #0071e3, #34aadc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ── Typography scale ── */
+.fs-nav-brand   { font-size: 1.1rem; }
+.fs-badge       { font-size: .7rem; }
+.fs-label       { font-size: .68rem; }
+.fs-sm          { font-size: .9rem; }
+.fs-xs          { font-size: .75rem; }
+.fs-stat-lg     { font-size: 2.2rem; }
+.fs-card-title  { font-size: 1.5rem; }
+.fs-service-sm  { font-size: 1.5rem; }
+
+/* ── Letter spacing ── */
+.ls-wide     { letter-spacing: .1em; }
+.ls-wider    { letter-spacing: .14em; }
+.ls-tight    { letter-spacing: -.03em; }
+.ls-tighter  { letter-spacing: -.04em; }
+.ls-tightest { letter-spacing: -.05em; }
+
+/* ── Display headings ── */
+.display-hero     { font-size: clamp(3.5rem, 8vw, 7rem); line-height: .9; }
+.display-hero-sub { font-size: clamp(1.1rem, 2vw, 1.35rem); line-height: 1.55; }
+.display-section  { font-size: clamp(2.5rem, 5vw, 4rem); line-height: .95; }
+.display-section-xl { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: .95; }
+.display-card     { font-size: clamp(1.8rem, 3vw, 2.8rem); }
+.display-service  { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+.display-contact  { font-size: clamp(2.8rem, 6vw, 5.5rem); line-height: .9; }
+
+/* ── Layout helpers ── */
+.section-pad    { padding: 120px 0; }
+.py-footer      { padding: 32px 0; }
+.hero-content   { min-height: 100vh; padding-top: 80px; padding-bottom: 80px; }
+.hero-lead-center { max-width: 560px; }
+.who-section    { min-height: 80vh; }
+.who-lead       { max-width: 440px; }
+.contact-lead   { max-width: 480px; }
+.card-title-max { max-width: 500px; }
+.card-desc-max  { max-width: 440px; }
+.service-desc   { max-width: 400px; }
+
+/* ── Nav ── */
+.nav-blur { background: rgba(255,255,255,.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,.06); }
+
+/* ── Buttons ── */
+.btn-apple-blue    { background: #0071e3; }
+.btn-apple-blue:hover { background: #0077ed; }
+.btn-glass-white   { background: rgba(255,255,255,.12); color: white; border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(10px); }
+
+/* ── Badges ── */
+.badge-glass-white { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); }
+.badge-glass-sm    { background: rgba(255,255,255,.12); color: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.15); padding: .35rem .8rem; }
+.badge-service-tag { background: rgba(255,255,255,.08); color: rgba(255,255,255,.5); font-size: .72rem; font-weight: 500; border: 1px solid rgba(255,255,255,.1); padding: .4rem .85rem; }
+
+/* ── Overlays ── */
+.overlay-hero-dark  { background: linear-gradient(to bottom, rgba(0,0,0,.3) 0%, rgba(0,0,0,.65) 100%); }
+.overlay-who        { background: linear-gradient(120deg, rgba(0,0,0,.9) 40%, rgba(0,0,0,.3) 100%); }
+.overlay-card-right { background: linear-gradient(to right, rgba(0,0,0,.85) 40%, rgba(0,0,0,.1) 100%); }
+.overlay-card-up    { background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.1) 60%); }
+.overlay-card-up-lg { background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.1) 65%); }
+.overlay-contact    { background: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, rgba(0,0,0,.9) 100%); z-index: 1; }
+
+/* ── Project cards ── */
+.card-feature-lg  { min-height: 520px; }
+.card-feature-md  { min-height: 400px; }
+.card-feature-sm  { min-height: 280px; }
+
+/* ── Icon circles ── */
+.icon-circle-blue  { width: 52px; height: 52px; background: rgba(0,113,227,.15); }
+.icon-circle-sky   { width: 52px; height: 52px; background: rgba(52,170,220,.15); }
+.icon-circle-green { width: 52px; height: 52px; background: rgba(52,211,153,.15); }
+.icon-circle-amber { width: 52px; height: 52px; background: rgba(251,191,36,.12); }
+
+/* ── Glows ── */
+.glow-blue-br  { right: -40px; bottom: -40px; width: 280px; height: 280px; background: radial-gradient(circle, rgba(0,113,227,.15) 0%, transparent 70%); pointer-events: none; }
+.glow-sky-bl   { left: -40px;  bottom: -40px; width: 280px; height: 280px; background: radial-gradient(circle, rgba(52,170,220,.12) 0%, transparent 70%); pointer-events: none; }
+.glow-green-tr { right: -40px; top: -40px;    width: 240px; height: 240px; background: radial-gradient(circle, rgba(52,211,153,.1) 0%, transparent 70%); pointer-events: none; }
+.glow-amber-tl { left: -40px;  top: -40px;    width: 240px; height: 240px; background: radial-gradient(circle, rgba(251,191,36,.1) 0%, transparent 70%); pointer-events: none; }
+
+/* ── Service cards ── */
+.service-card-min    { min-height: 320px; }
+.service-card-min-sm { min-height: 280px; }
+
+/* ── Stat divider ── */
+.stat-divider-dark { width: 1px; background: rgba(255,255,255,.1); }
+
+/* ── Testimonials ── */
+.card-testimonial-dark          { transition: transform .2s; }
+.card-testimonial-dark:hover    { transform: translateY(-4px); }
+.quote-mark-lg  { font-size: 3rem; }
+.avatar-md      { width: 44px; height: 44px; }
+
+/* ── Scroll cue ── */
+.scroll-cue { z-index: 2; }
+
+/* ── Contact form ── */
+.form-card-dark  { background: rgba(29,29,31,.8); border: 1px solid rgba(255,255,255,.1); backdrop-filter: blur(20px); }
+.input-dark      { background: rgba(255,255,255,.06) !important; border: 1px solid rgba(255,255,255,.12) !important; color: white !important; padding: .75rem 1rem; font-size: .9rem; }
+.input-dark::placeholder { color: rgba(255,255,255,.3) !important; }
+.input-dark:focus { background: rgba(255,255,255,.09) !important; border-color: rgba(0,113,227,.6) !important; box-shadow: 0 0 0 3px rgba(0,113,227,.2) !important; }
+
+/* ── Footer ── */
+.footer-link-dark       { color: rgba(255,255,255,.35); transition: color .15s; }
+.footer-link-dark:hover { color: white; }
+</style>
