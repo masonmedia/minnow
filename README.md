@@ -1,6 +1,6 @@
-# Mini Framework
+# Minnow Framework
 
-A tiny, zero-dependency JavaScript framework with Vue-inspired single-file components, reactive data, and client-side routing. No build tools, no npm, no bundler — just files in a browser.
+A small, zero-dependency JavaScript framework with Vue-inspired single-file components, reactive data, and client-side routing. No build tools, no npm, no bundler — just files in a browser.
 
 ---
 
@@ -129,9 +129,9 @@ h1 { color: navy; }
 | Directive | What it does | Example |
 |---|---|---|
 | `{{ expr }}` | Renders a value | `{{ post.title }}` |
-| `v-if` | Shows/hides element | `<div v-if="loading">` |
-| `v-for` | Repeats element | `<li v-for="post in posts">` |
-| `v-model` | Two-way input binding | `<input v-model="query">` |
+| `m-if` | Shows/hides element | `<div v-if="loading">` |
+| `m-for` | Repeats element | `<li v-for="post in posts">` |
+| `m-model` | Two-way input binding | `<input v-model="query">` |
 | `:class` | Conditional classes | `<div :class="{ active: isOpen }">` |
 | `@click` | Click handler | `<button @click="save">` |
 

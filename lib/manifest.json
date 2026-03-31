@@ -32,6 +32,10 @@
     "component": "./pages/templates/3.html"
   },
   {
+    "path": "/templates/4",
+    "component": "./pages/templates/4.html"
+  },
+  {
     "path": "/blog-remote/:slug",
     "component": "./pages/blog-remote/[slug].html"
   },

@@ -1,0 +1,1780 @@
+<template>
+  <div>
+    <!-- comment this line using theme -->
+    <div class="mt-5 pt-3"></div>
+    <!-- ── Nav ── -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
+      <div class="container py-1">
+        <a
+          href="/"
+          class="navbar-brand fw-bold text-decoration-none d-flex align-items-center gap-2"
+        >
+          <span class="nav-logo-mark"></span>
+          <span class="text-near-black"
+            >N2 <span class="text-pink">Speech</span></span
+          >
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#n2Nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="n2Nav">
+          <ul class="navbar-nav ms-auto align-items-center gap-1">
+            <li class="nav-item">
+              <a href="#services" class="nav-link fw-medium px-3 text-secondary"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#who" class="nav-link fw-medium px-3 text-secondary"
+                >Who we help</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link fw-medium px-3 text-secondary"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#resources"
+                class="nav-link fw-medium px-3 text-secondary"
+                >Resources</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                href="#contact"
+                class="btn px-4 fw-semibold text-white rounded-pill btn-pink"
+                >Book a consult</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <section
+      class="overflow-hidden position-relative bg-near-white min-vh-hero"
+    >
+      <div class="container py-5">
+        <div class="row align-items-center g-5 min-vh-hero-inner">
+          <div class="col-lg-6 py-5">
+            <div
+              class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-5 badge-pink-soft"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="#f15bb5"
+                viewBox="0 0 16 16"
+              >
+                <circle cx="8" cy="8" r="8" />
+              </svg>
+              <span
+                class="text-uppercase fw-semibold text-pink fs-badge ls-wide"
+                >Accepting new clients — all ages</span
+              >
+            </div>
+            <h1 class="fw-bold mb-4 display-hero text-near-black">
+              Find your<br />voice. <em class="text-pink">We'll</em><br /><em
+                class="text-teal"
+                >guide you.</em
+              >
+            </h1>
+            <p class="mb-5 lh-lg text-muted fs-5 hero-lead">
+              N2 Speech Therapy provides evidence-based assessment, diagnosis,
+              and treatment for communication and swallowing disorders — for
+              clients from toddlers to seniors.
+            </p>
+            <div class="d-flex gap-3 flex-wrap align-items-center">
+              <a
+                href="#contact"
+                class="btn btn-lg px-5 fw-semibold text-white rounded-pill btn-pink shadow-hero"
+                >Book a consult</a
+              >
+              <a
+                href="#services"
+                class="btn btn-lg px-5 fw-semibold rounded-pill btn-outline-light-border"
+                >Our services</a
+              >
+            </div>
+            <div class="d-flex align-items-center gap-4 mt-5 pt-3 border-top">
+              <div class="text-center">
+                <div class="fw-bold fs-stat text-near-black">500+</div>
+                <div class="text-uppercase text-muted fs-label ls-wider">
+                  Clients
+                </div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="text-center">
+                <div class="fw-bold fs-stat text-near-black">12yr</div>
+                <div class="text-uppercase text-muted fs-label ls-wider">
+                  Practice
+                </div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="text-center">
+                <div class="fw-bold fs-stat text-near-black">All</div>
+                <div class="text-uppercase text-muted fs-label ls-wider">
+                  Ages
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-none d-lg-block position-relative hero-collage"
+          >
+            <div
+              class="rounded-4 overflow-hidden position-absolute shadow-lg hero-img-main"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&q=80"
+                alt="Child in speech therapy"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </div>
+            <div
+              class="rounded-4 overflow-hidden position-absolute shadow-lg hero-img-secondary"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1576765608866-5b51046452be?w=600&q=80"
+                alt="Therapy session"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </div>
+            <div
+              class="position-absolute bg-white rounded-3 shadow-lg p-3 d-flex align-items-center gap-3 hero-badge-card"
+            >
+              <div
+                class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 icon-circle-teal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="#00bbf9"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  />
+                  <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="fw-semibold fs-sm text-near-black">
+                  CASLPO Registered
+                </div>
+                <div class="fs-xs text-muted">Licensed &amp; insured SLP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Speciality bar ── -->
+    <div class="bg-pink-wash border-top border-bottom py-4">
+      <div class="container">
+        <div
+          class="d-flex align-items-center gap-4 flex-wrap justify-content-center"
+        >
+          <div class="text-uppercase fw-bold fs-label ls-wide text-pink">
+            Specialities
+          </div>
+          <div class="spec-pill">
+            <span class="spec-dot bg-pink"></span>School Board Contracts
+          </div>
+          <div class="spec-pill">
+            <span class="spec-dot bg-teal"></span>Swallowing &amp; Feeding
+          </div>
+          <div class="spec-pill">
+            <span class="spec-dot bg-pink"></span>Language &amp; Literacy
+          </div>
+          <div class="spec-pill">
+            <span class="spec-dot bg-teal"></span>ASD Communication
+          </div>
+          <div class="spec-pill">
+            <span class="spec-dot bg-pink"></span>Behaviour-based Approaches
+          </div>
+          <div class="spec-pill">
+            <span class="spec-dot bg-teal"></span>AAC Systems
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Services ── -->
+    <section class="py-5 bg-white" id="services">
+      <div class="container py-5">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-7 text-center">
+            <div
+              class="fw-bold text-uppercase mb-3 text-pink fs-label ls-wider"
+            >
+              What I treat
+            </div>
+            <h2 class="fw-bold mb-3 display-section text-near-black">
+              Evidence-based therapy<br />for every stage of life
+            </h2>
+            <p class="text-muted lh-lg">
+              Using the most current clinical protocols — PROMPT, Hanen, Lee
+              Silverman Voice Treatment, Lidcombe, and AAC — tailored to each
+              client's unique profile.
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="bg-white rounded-4 p-4 h-100 d-flex flex-column border card-service"
+            >
+              <div
+                class="mb-4 rounded-3 d-flex align-items-center justify-content-center icon-circle-pink"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#f15bb5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="fw-bold text-uppercase mb-2 text-muted fs-label ls-wide"
+              >
+                01
+              </div>
+              <h4 class="fw-bold mb-3 ls-tight text-near-black">
+                Speech Sound Disorders
+              </h4>
+              <p class="text-secondary fs-sm lh-lg">
+                Articulation therapy, phonological processing, and motor speech
+                intervention including apraxia of speech (PROMPT).
+              </p>
+              <ul class="list-unstyled mt-3 mb-0 fs-xs text-muted service-list">
+                <li class="py-1 border-bottom">Articulation &amp; Phonology</li>
+                <li class="py-1 border-bottom">Childhood Apraxia (CAS)</li>
+                <li class="py-1">Dysarthria</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="rounded-4 p-4 h-100 d-flex flex-column bg-near-black text-light card-service"
+            >
+              <div
+                class="mb-4 rounded-3 d-flex align-items-center justify-content-center icon-circle-pink-dark"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#f15bb5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="fw-bold text-uppercase mb-2 fs-label ls-wide text-white text-opacity-25"
+              >
+                02
+              </div>
+              <h4 class="fw-bold mb-3 text-white ls-tight">
+                Language &amp; Literacy
+              </h4>
+              <p class="fs-sm lh-lg text-white text-opacity-50">
+                Receptive and expressive language therapy, narrative
+                development, phonological awareness, and reading readiness.
+              </p>
+              <ul class="list-unstyled mt-3 mb-0 fs-xs service-list-dark">
+                <li class="py-1">Expressive / Receptive Lang.</li>
+                <li class="py-1">Phonological Awareness</li>
+                <li class="py-1">Reading &amp; Writing Support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="bg-white rounded-4 p-4 h-100 d-flex flex-column border card-service"
+            >
+              <div
+                class="mb-4 rounded-3 d-flex align-items-center justify-content-center icon-circle-teal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#00bbf9"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="fw-bold text-uppercase mb-2 text-muted fs-label ls-wide"
+              >
+                03
+              </div>
+              <h4 class="fw-bold mb-3 ls-tight text-near-black">
+                Fluency Disorders
+              </h4>
+              <p class="text-secondary fs-sm lh-lg">
+                Stuttering and cluttering treatment using Lidcombe Program,
+                stuttering modification, and fluency shaping techniques.
+              </p>
+              <ul class="list-unstyled mt-3 mb-0 fs-xs text-muted service-list">
+                <li class="py-1 border-bottom">Stuttering (Lidcombe)</li>
+                <li class="py-1 border-bottom">Cluttering</li>
+                <li class="py-1">Fluency Shaping</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="bg-white rounded-4 p-4 h-100 d-flex flex-column border card-service"
+            >
+              <div
+                class="mb-4 rounded-3 d-flex align-items-center justify-content-center icon-circle-teal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#00bbf9"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="fw-bold text-uppercase mb-2 text-muted fs-label ls-wide"
+              >
+                04
+              </div>
+              <h4 class="fw-bold mb-3 ls-tight text-near-black">
+                Voice &amp; Swallowing
+              </h4>
+              <p class="text-secondary fs-sm lh-lg">
+                Voice therapy for dysphonia and vocal nodules. Dysphagia
+                assessment and LSVT LOUD for Parkinson's disease.
+              </p>
+              <ul class="list-unstyled mt-3 mb-0 fs-xs text-muted service-list">
+                <li class="py-1 border-bottom">Dysphonia / Vocal Nodules</li>
+                <li class="py-1 border-bottom">Dysphagia (MBS, FEES)</li>
+                <li class="py-1">LSVT LOUD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Who we help ── -->
+    <section class="py-5 bg-teal-wash" id="who">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <div class="fw-bold text-uppercase mb-3 text-teal fs-label ls-wider">
+            Who I help
+          </div>
+          <h2 class="fw-bold display-section text-near-black">
+            Communication support<br />across every age
+          </h2>
+        </div>
+        <!-- Four equal landscape cards -->
+        <div class="row g-4 mb-4">
+          <div class="col-md-6">
+            <div class="rounded-4 overflow-hidden position-relative who-card">
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80"
+                alt="Young children"
+                class="w-100 h-100 object-fit-cover"
+              />
+              <div
+                class="overlay-grad position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div class="position-absolute bottom-0 start-0 p-4">
+                <span class="badge rounded-pill fw-normal mb-2 badge-glass"
+                  >Early Childhood</span
+                >
+                <h3 class="text-white fw-bold mb-1 ls-tight">
+                  Toddlers &amp; Young Children
+                </h3>
+                <p class="mb-0 text-white text-opacity-75 fs-sm">
+                  Late talkers, developmental delays, ASD, and early language
+                  support from 18 months.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="rounded-4 overflow-hidden position-relative who-card">
+              <img
+                src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80"
+                alt="School age children in classroom"
+                class="w-100 h-100 object-fit-cover"
+              />
+              <div
+                class="overlay-grad position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div class="position-absolute bottom-0 start-0 p-4">
+                <span class="badge rounded-pill fw-normal mb-2 badge-glass"
+                  >School Age</span
+                >
+                <h3 class="text-white fw-bold mb-1 ls-tight">Children 5–17</h3>
+                <p class="mb-0 text-white text-opacity-75 fs-sm">
+                  Literacy, IEP support, school board contracts, and classroom
+                  communication goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="rounded-4 overflow-hidden position-relative who-card">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                alt="Adults working"
+                class="w-100 h-100 object-fit-cover"
+              />
+              <div
+                class="overlay-grad position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div class="position-absolute bottom-0 start-0 p-4">
+                <span class="badge rounded-pill fw-normal mb-2 badge-glass"
+                  >Adults</span
+                >
+                <h3 class="text-white fw-bold mb-1 ls-tight">Adults 18–64</h3>
+                <p class="mb-0 text-white text-opacity-75 fs-sm">
+                  Stuttering, voice disorders, acquired brain injury, accent
+                  modification, and professional communication.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="rounded-4 overflow-hidden position-relative who-card">
+              <img
+                src="https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=800&q=80"
+                alt="Senior couple outdoors"
+                class="w-100 h-100 object-fit-cover"
+              />
+              <div
+                class="overlay-grad position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div class="position-absolute bottom-0 start-0 p-4">
+                <span class="badge rounded-pill fw-normal mb-2 badge-glass"
+                  >Seniors</span
+                >
+                <h3 class="text-white fw-bold mb-1 ls-tight">Seniors 65+</h3>
+                <p class="mb-0 text-white text-opacity-75 fs-sm">
+                  Stroke recovery, aphasia, Parkinson's (LSVT LOUD), dementia
+                  communication strategies, and dysphagia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Telehealth strip -->
+        <div class="row g-4 mt-0">
+          <div class="col-12">
+            <div
+              class="rounded-4 p-4 d-flex align-items-center gap-4 flex-wrap bg-teal-strip"
+            >
+              <div
+                class="rounded-3 d-flex align-items-center justify-content-center icon-circle-teal flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#00bbf9"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"
+                  />
+                </svg>
+              </div>
+              <div class="flex-grow-1">
+                <div class="fw-bold text-near-black ls-tight mb-1">
+                  Telehealth available — Ontario-wide
+                </div>
+                <div class="text-secondary fs-sm">
+                  Secure virtual sessions on any device. Same quality care, no
+                  commute required.
+                </div>
+              </div>
+              <a
+                href="#contact"
+                class="btn rounded-pill fw-semibold px-4 btn-teal flex-shrink-0"
+                >Book virtual →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Consultation types ── -->
+    <section class="py-5 bg-white" id="consultations">
+      <div class="container py-5">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6 text-center">
+            <div
+              class="fw-bold text-uppercase mb-3 text-pink fs-label ls-wider"
+            >
+              Consultation Types
+            </div>
+            <h2 class="fw-bold mb-3 display-section text-near-black">
+              The right format<br />for every need
+            </h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="rounded-4 p-4 h-100 d-flex flex-column consult-card bg-pink-wash border border-pink-soft"
+            >
+              <div
+                class="rounded-3 d-flex align-items-center justify-content-center icon-circle-pink mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#f15bb5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a4 4 0 0 1 8 0v6a2.5 2.5 0 0 1-2.5 2.5H9a1 1 0 0 1 0-2h.5A.5.5 0 0 0 10 12V7a1 1 0 0 1 1-1h1V6a5 5 0 0 0-4-4.9"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-bold mb-2 ls-tight text-near-black">
+                Initial Assessment
+              </h4>
+              <p class="text-secondary fs-sm lh-lg flex-grow-1">
+                Standardised battery using CELF, GFTA, CMSP, and client-specific
+                protocols to establish a full communication and swallowing
+                profile.
+              </p>
+              <div
+                class="mt-3 fs-xs text-pink fw-semibold text-uppercase ls-wide"
+              >
+                90 min · In-clinic or virtual
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="rounded-4 p-4 h-100 d-flex flex-column consult-card bg-teal-wash border border-teal-soft"
+            >
+              <div
+                class="rounded-3 d-flex align-items-center justify-content-center icon-circle-teal mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#00bbf9"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2z"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-bold mb-2 ls-tight text-near-black">
+                Individual Therapy
+              </h4>
+              <p class="text-secondary fs-sm lh-lg flex-grow-1">
+                One-to-one sessions targeting goals from your treatment plan.
+                Structured, evidence-based, and adjusted each block to reflect
+                measurable progress.
+              </p>
+              <div
+                class="mt-3 fs-xs text-teal fw-semibold text-uppercase ls-wide"
+              >
+                45–60 min · Weekly
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="rounded-4 p-4 h-100 d-flex flex-column consult-card bg-pink-wash border border-pink-soft"
+            >
+              <div
+                class="rounded-3 d-flex align-items-center justify-content-center icon-circle-pink mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#f15bb5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-bold mb-2 ls-tight text-near-black">
+                Caregiver Coaching
+              </h4>
+              <p class="text-secondary fs-sm lh-lg flex-grow-1">
+                Parent or PSW coaching to embed language-facilitation strategies
+                into everyday routines — meals, play, bath time, and community
+                settings.
+              </p>
+              <div
+                class="mt-3 fs-xs text-pink fw-semibold text-uppercase ls-wide"
+              >
+                60 min · Monthly
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="rounded-4 p-4 h-100 d-flex flex-column consult-card bg-teal-wash border border-teal-soft"
+            >
+              <div
+                class="rounded-3 d-flex align-items-center justify-content-center icon-circle-teal mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#00bbf9"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-bold mb-2 ls-tight text-near-black">
+                MDT Case Consultation
+              </h4>
+              <p class="text-secondary fs-sm lh-lg flex-grow-1">
+                Multidisciplinary meetings with OT, PT, psychology, and
+                educators. IEP contributions and funding support — ACSD, ADP,
+                SSAH applications.
+              </p>
+              <div
+                class="mt-3 fs-xs text-teal fw-semibold text-uppercase ls-wide"
+              >
+                Variable · Billed per hour
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About — single therapist ── -->
+    <section class="py-5 bg-near-white" id="about">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="position-relative about-wrap">
+              <div class="rounded-4 overflow-hidden about-img-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&q=80"
+                  alt="Speech therapist"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <!-- Credential card -->
+              <div
+                class="position-absolute bg-white rounded-3 shadow-lg p-3 about-cred-card"
+              >
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 icon-circle-pink"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="#f15bb5"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                      />
+                      <path
+                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-bold fs-sm text-near-black">
+                      Sarah N., M.H.Sc., SLP(C)
+                    </div>
+                    <div class="fs-xs text-muted">
+                      Registered Speech-Language Pathologist
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 flex-wrap">
+                  <span
+                    class="badge rounded-pill badge-pink-pill fs-xs fw-normal"
+                    >CASLPO</span
+                  >
+                  <span
+                    class="badge rounded-pill badge-teal-pill fs-xs fw-normal"
+                    >SAC</span
+                  >
+                  <span
+                    class="badge rounded-pill badge-pink-pill fs-xs fw-normal"
+                    >PROMPT</span
+                  >
+                  <span
+                    class="badge rounded-pill badge-teal-pill fs-xs fw-normal"
+                    >Hanen</span
+                  >
+                </div>
+              </div>
+              <!-- Experience badge -->
+              <div
+                class="position-absolute bg-near-black rounded-3 px-3 py-2 about-exp-badge"
+              >
+                <div
+                  class="fw-bold text-white ls-tight"
+                  style="font-size: 1.4rem"
+                >
+                  12yr
+                </div>
+                <div
+                  class="fs-xs text-white text-opacity-50 text-uppercase ls-wide"
+                >
+                  Experience
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div
+              class="fw-bold text-uppercase mb-3 text-teal fs-label ls-wider"
+            >
+              About me
+            </div>
+            <h2 class="fw-bold mb-2 display-section text-near-black">
+              Hi, I'm Sarah.
+            </h2>
+            <p
+              class="fw-semibold text-pink mb-4 ls-tight"
+              style="font-size: 1.1rem"
+            >
+              M.H.Sc., SLP(C) — Registered Speech-Language Pathologist
+            </p>
+            <p class="mb-4 lh-lg text-secondary fs-5">
+              I founded N2 Speech Therapy after more than a decade working in
+              hospital, school board, and private clinic settings. I believe the
+              best outcomes happen when clients and families feel truly heard —
+              so every assessment starts with listening, not testing.
+            </p>
+            <p class="mb-5 lh-lg text-secondary">
+              I hold specialty certifications in PROMPT, Hanen It Takes Two to
+              Talk®, LSVT LOUD, and AAC. I've worked with school boards across
+              Ontario and maintain active case consultation relationships with
+              OTs, PTs, and paediatricians in the region.
+            </p>
+            <div class="row g-3 mb-5">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div
+                    class="flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center icon-circle-pink mt-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="#f15bb5"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-semibold mb-1 fs-sm text-near-black">
+                      PROMPT Certified
+                    </div>
+                    <div class="fs-xs text-muted">Motor speech specialist</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div
+                    class="flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center icon-circle-teal mt-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="#00bbf9"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-semibold mb-1 fs-sm text-near-black">
+                      Hanen Trained
+                    </div>
+                    <div class="fs-xs text-muted">It Takes Two to Talk®</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div
+                    class="flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center icon-circle-pink mt-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="#f15bb5"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-semibold mb-1 fs-sm text-near-black">
+                      AAC Specialist
+                    </div>
+                    <div class="fs-xs text-muted">
+                      Low &amp; high tech systems
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div
+                    class="flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center icon-circle-teal mt-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="#00bbf9"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-semibold mb-1 fs-sm text-near-black">
+                      LSVT LOUD
+                    </div>
+                    <div class="fs-xs text-muted">
+                      Parkinson's voice therapy
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#contact"
+              class="btn btn-lg px-5 fw-semibold text-white rounded-pill btn-pink"
+              >Book with Sarah →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <div class="fw-bold text-uppercase mb-3 text-pink fs-label ls-wider">
+            Client Stories
+          </div>
+          <h2 class="fw-bold display-section text-near-black">
+            Families I've helped
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              class="bg-pink-wash rounded-4 p-4 h-100 d-flex flex-column card-testimonial border border-pink-soft"
+            >
+              <div class="mb-3 fw-bold text-pink quote-mark">"</div>
+              <p class="fw-medium flex-grow-1 mb-4 text-near-black lh-lg fs-sm">
+                Our son was almost 3 with fewer than 10 words. After six months
+                with Sarah he's chatting in full sentences. The Hanen strategies
+                she taught us changed how our whole family communicates.
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80"
+                  alt="Parent"
+                  class="rounded-circle object-fit-cover avatar-sm flex-shrink-0"
+                />
+                <div>
+                  <div class="fw-semibold fs-sm text-near-black">Amara T.</div>
+                  <div class="fs-xs text-muted">
+                    Parent of 3-year-old client
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="bg-teal-wash rounded-4 p-4 h-100 d-flex flex-column card-testimonial border border-teal-soft"
+            >
+              <div class="mb-3 fw-bold text-teal quote-mark">"</div>
+              <p class="fw-medium flex-grow-1 mb-4 text-near-black lh-lg fs-sm">
+                I had a stroke at 58 and lost a lot of my word-finding ability.
+                Sarah worked alongside my neurologist and OT — that coordinated
+                approach made a real difference to my recovery and confidence.
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80"
+                  alt="Adult client"
+                  class="rounded-circle object-fit-cover avatar-sm flex-shrink-0"
+                />
+                <div>
+                  <div class="fw-semibold fs-sm text-near-black">David R.</div>
+                  <div class="fs-xs text-muted">Adult aphasia client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="bg-pink-wash rounded-4 p-4 h-100 d-flex flex-column card-testimonial border border-pink-soft"
+            >
+              <div class="mb-3 fw-bold text-pink quote-mark">"</div>
+              <p class="fw-medium flex-grow-1 mb-4 text-near-black lh-lg fs-sm">
+                My mother has Parkinson's and her voice had become almost
+                inaudible. The LSVT LOUD program brought real volume back —
+                she's joining conversations at the dinner table again.
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80"
+                  alt="Family member"
+                  class="rounded-circle object-fit-cover avatar-sm flex-shrink-0"
+                />
+                <div>
+                  <div class="fw-semibold fs-sm text-near-black">Linda K.</div>
+                  <div class="fs-xs text-muted">Daughter of senior client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Resources ── -->
+    <section class="py-5 bg-teal-wash" id="resources">
+      <div class="container py-5">
+        <div
+          class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3"
+        >
+          <div>
+            <div
+              class="fw-bold text-uppercase mb-3 text-teal fs-label ls-wider"
+            >
+              Resources
+            </div>
+            <h2 class="fw-bold mb-0 display-section text-near-black">
+              Learn at your own pace
+            </h2>
+          </div>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            class="btn fw-semibold rounded-pill px-4 btn-outline-teal"
+            >All videos →</a
+          >
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div
+              class="bg-white rounded-4 overflow-hidden border resource-card"
+            >
+              <div class="resource-img-wrap position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80"
+                  alt="Late talkers video"
+                  class="w-100 h-100 object-fit-cover resource-img"
+                />
+                <div
+                  class="position-absolute top-50 start-50 translate-middle play-btn d-flex align-items-center justify-content-center rounded-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="white"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span
+                    class="badge rounded-pill fw-semibold badge-teal-pill fs-xs"
+                    >Video · 8 min</span
+                  >
+                </div>
+                <h4 class="fw-bold mb-2 ls-tight text-near-black lh-sm">
+                  Is my toddler a late talker? What parents need to know
+                </h4>
+                <p class="text-secondary fs-sm lh-lg">
+                  The difference between a late talker and a language delay, and
+                  when to seek a formal assessment.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top"
+                >
+                  <div class="fs-xs text-muted">
+                    Early Childhood · N2 Speech
+                  </div>
+                  <a
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    class="fw-semibold text-decoration-none text-teal fs-xs"
+                    >Watch →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="bg-white rounded-4 overflow-hidden border resource-card"
+            >
+              <div class="resource-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                  alt="Stuttering article"
+                  class="w-100 h-100 object-fit-cover resource-img"
+                />
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span
+                    class="badge rounded-pill fw-semibold badge-pink-pill fs-xs"
+                    >Article · 6 min read</span
+                  >
+                </div>
+                <h4 class="fw-bold mb-2 ls-tight text-near-black lh-sm">
+                  Stuttering in adults: treatment options and what the evidence
+                  says
+                </h4>
+                <p class="text-secondary fs-sm lh-lg">
+                  A plain-language overview of fluency shaping vs stuttering
+                  modification and how to decide which fits your goals.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top"
+                >
+                  <div class="fs-xs text-muted">Fluency · Evidence-based</div>
+                  <a
+                    href="#"
+                    class="fw-semibold text-decoration-none text-pink fs-xs"
+                    >Read →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="bg-white rounded-4 overflow-hidden border resource-card"
+            >
+              <div class="resource-img-wrap position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=800&q=80"
+                  alt="Parkinson's video"
+                  class="w-100 h-100 object-fit-cover resource-img"
+                />
+                <div
+                  class="position-absolute top-50 start-50 translate-middle play-btn d-flex align-items-center justify-content-center rounded-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="white"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span
+                    class="badge rounded-pill fw-semibold badge-teal-pill fs-xs"
+                    >Video · 12 min</span
+                  >
+                </div>
+                <h4 class="fw-bold mb-2 ls-tight text-near-black lh-sm">
+                  LSVT LOUD explained: voice therapy for Parkinson's disease
+                </h4>
+                <p class="text-secondary fs-sm lh-lg">
+                  What to expect from the four-week intensive and how caregivers
+                  can support carryover at home.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top"
+                >
+                  <div class="fs-xs text-muted">Seniors · Parkinson's</div>
+                  <a
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    class="fw-semibold text-decoration-none text-teal fs-xs"
+                    >Watch →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="bg-white rounded-4 overflow-hidden border resource-card"
+            >
+              <div class="resource-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80"
+                  alt="AAC article"
+                  class="w-100 h-100 object-fit-cover resource-img"
+                />
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span
+                    class="badge rounded-pill fw-semibold badge-pink-pill fs-xs"
+                    >Article · 5 min read</span
+                  >
+                </div>
+                <h4 class="fw-bold mb-2 ls-tight text-near-black lh-sm">
+                  AAC won't stop your child from talking — myths and facts for
+                  families
+                </h4>
+                <p class="text-secondary fs-sm lh-lg">
+                  The research is clear: augmentative and alternative
+                  communication supports speech development. We break down the
+                  most common misconceptions.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top"
+                >
+                  <div class="fs-xs text-muted">AAC · Evidence-based</div>
+                  <a
+                    href="#"
+                    class="fw-semibold text-decoration-none text-pink fs-xs"
+                    >Read →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section
+      class="py-5 position-relative overflow-hidden bg-near-black"
+      id="contact"
+    >
+      <div class="contact-glow-pink position-absolute rounded-circle"></div>
+      <div class="contact-glow-teal position-absolute rounded-circle"></div>
+      <div class="container py-5 position-relative">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 text-center">
+            <div
+              class="fw-bold text-uppercase mb-3 text-pink fs-label ls-wider"
+            >
+              Get In Touch
+            </div>
+            <h2 class="fw-bold text-white mb-4 display-contact">
+              The first step is<br /><em class="text-pink">a conversation.</em>
+            </h2>
+            <p class="mb-5 text-white text-opacity-50 fs-5">
+              Tell me about your child, yourself, or your family member. I
+              respond to every inquiry within two business days.
+            </p>
+            <div class="bg-white rounded-4 p-4 p-lg-5 text-start shadow-lg">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold fs-xs text-near-black"
+                    >Your name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control rounded-3 border-2 input-padded"
+                    placeholder="Jane Smith"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold fs-xs text-near-black"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control rounded-3 border-2 input-padded"
+                    placeholder="jane@email.com"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold fs-xs text-near-black"
+                    >Phone</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control rounded-3 border-2 input-padded"
+                    placeholder="(416) 555-0100"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold fs-xs text-near-black"
+                    >Client age group</label
+                  >
+                  <select class="form-select rounded-3 border-2 input-padded">
+                    <option>Toddler (0–4)</option>
+                    <option>Child (5–12)</option>
+                    <option>Teen (13–17)</option>
+                    <option>Adult (18–64)</option>
+                    <option>Senior (65+)</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold fs-xs text-near-black"
+                    >Primary concern</label
+                  >
+                  <select class="form-select rounded-3 border-2 input-padded">
+                    <option>Speech sound errors / articulation</option>
+                    <option>Late talking / language delay</option>
+                    <option>Stuttering or fluency</option>
+                    <option>Voice concerns</option>
+                    <option>Swallowing / feeding difficulties</option>
+                    <option>Stroke / acquired brain injury</option>
+                    <option>AAC / alternative communication</option>
+                    <option>Not sure — need an assessment</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold fs-xs text-near-black"
+                    >Anything else I should know?</label
+                  >
+                  <textarea
+                    class="form-control rounded-3 border-2 input-padded"
+                    rows="3"
+                    placeholder="Previous diagnoses, therapy history, school supports, referral source..."
+                  ></textarea>
+                </div>
+                <div class="col-12 pt-2">
+                  <button
+                    class="btn btn-lg w-100 rounded-3 fw-semibold py-3 text-white btn-pink"
+                  >
+                    Send referral →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="py-4 bg-near-black border-top border-white-7">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-md-4">
+            <div
+              class="fw-bold text-white d-flex align-items-center gap-2 ls-tight"
+            >
+              <span class="footer-logo-mark flex-shrink-0"></span>
+              N2 <span class="text-pink">Speech</span>
+            </div>
+            <div class="fs-xs text-white text-opacity-25 mt-1">
+              Registered Speech-Language Pathologist · CASLPO
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center gap-4">
+            <a href="#services" class="text-decoration-none fs-xs footer-link"
+              >Services</a
+            >
+            <a href="#who" class="text-decoration-none fs-xs footer-link"
+              >Who I help</a
+            >
+            <a href="#about" class="text-decoration-none fs-xs footer-link"
+              >About</a
+            >
+            <a href="#contact" class="text-decoration-none fs-xs footer-link"
+              >Contact</a
+            >
+          </div>
+          <div class="col-md-4 text-md-end">
+            <div class="fs-xs text-white text-opacity-25">
+              © 2026 N2 Speech Therapy. CASLPO registered.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</template>
+
+<script>
+  ({
+    meta: {
+      title: "N2 Speech Therapy — Registered SLP for All Ages",
+      description:
+        "Evidence-based speech-language pathology for children, adults, and seniors. Assessment, therapy, and caregiver coaching across Ontario.",
+      siteName: "N2 Speech Therapy",
+      twitterCard: "summary_large_image",
+    },
+    data() {
+      return {};
+    },
+  });
+</script>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+  /* ── Base ── */
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Colour tokens ── */
+  .text-pink {
+    color: #f15bb5;
+  }
+  .text-teal {
+    color: #00bbf9;
+  }
+  .text-near-black {
+    color: #0a0a0a;
+  }
+  .text-muted-light {
+    color: #d4d4d4;
+  }
+  .bg-near-white {
+    background: #fafafa;
+  }
+  .bg-near-black {
+    background: #0a0a0a;
+  }
+  .bg-pink-wash {
+    background: rgba(241, 91, 181, 0.06);
+  }
+  .bg-teal-wash {
+    background: rgba(0, 187, 249, 0.06);
+  }
+  .bg-teal-strip {
+    background: rgba(0, 187, 249, 0.08);
+    border: 1px solid rgba(0, 187, 249, 0.15);
+  }
+  .border-white-7 {
+    border-color: rgba(255, 255, 255, 0.07) !important;
+  }
+  .border-pink-soft {
+    border-color: rgba(241, 91, 181, 0.2) !important;
+  }
+  .border-teal-soft {
+    border-color: rgba(0, 187, 249, 0.2) !important;
+  }
+
+  /* ── Spec pills ── */
+  .spec-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #3a3a3a;
+  }
+  .spec-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .bg-pink {
+    background: #f15bb5;
+  }
+  .bg-teal {
+    background: #00bbf9;
+  }
+
+  /* ── Typography ── */
+  .fs-badge {
+    font-size: 0.7rem;
+  }
+  .fs-label {
+    font-size: 0.68rem;
+  }
+  .fs-sm {
+    font-size: 0.9rem;
+  }
+  .fs-xs {
+    font-size: 0.75rem;
+  }
+  .fs-stat {
+    font-size: 1.5rem;
+  }
+  .ls-wide {
+    letter-spacing: 0.1em;
+  }
+  .ls-wider {
+    letter-spacing: 0.14em;
+  }
+  .ls-tight {
+    letter-spacing: -0.02em;
+  }
+  .ls-snug {
+    letter-spacing: -0.01em;
+  }
+
+  /* ── Display headings ── */
+  .display-hero {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+  }
+  .display-section {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .display-contact {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+
+  /* ── Hero ── */
+  .min-vh-hero {
+    min-height: 94vh;
+  }
+  .min-vh-hero-inner {
+    min-height: 88vh;
+  }
+  .hero-lead {
+    max-width: 460px;
+  }
+  .shadow-hero {
+    box-shadow: 0 4px 24px rgba(241, 91, 181, 0.3);
+  }
+  .hero-collage {
+    height: 580px;
+  }
+  .hero-img-main {
+    top: 0;
+    right: 0;
+    width: 72%;
+    height: 380px;
+  }
+  .hero-img-secondary {
+    bottom: 0;
+    left: 0;
+    width: 52%;
+    height: 240px;
+  }
+  .hero-badge-card {
+    bottom: 60px;
+    right: 0;
+    z-index: 2;
+    min-width: 220px;
+  }
+
+  /* ── About — single therapist ── */
+  .about-wrap {
+    height: 480px;
+  }
+  .about-img-frame {
+    height: 420px;
+    width: 85%;
+  }
+  .about-cred-card {
+    bottom: 30px;
+    right: 0;
+    z-index: 2;
+    min-width: 280px;
+  }
+  .about-exp-badge {
+    top: 20px;
+    right: 0;
+    z-index: 2;
+  }
+
+  /* ── Buttons ── */
+  .btn-pink {
+    background: #f15bb5;
+  }
+  .btn-pink:hover {
+    background: #d94da0;
+  }
+  .btn-teal {
+    background: #00bbf9;
+    color: white;
+  }
+  .btn-teal:hover {
+    background: #00a8e0;
+    color: white;
+  }
+  .btn-outline-light-border {
+    color: #0a0a0a;
+    border: 1.5px solid #d4d4d4;
+  }
+  .btn-outline-teal {
+    border: 1.5px solid #00bbf9;
+    color: #00bbf9;
+  }
+  .btn-outline-teal:hover {
+    background: #00bbf9;
+    color: white;
+  }
+
+  /* ── Badges ── */
+  .badge-pink-soft {
+    background: rgba(241, 91, 181, 0.1);
+    border: 1px solid rgba(241, 91, 181, 0.25);
+  }
+  .badge-glass {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .badge-glass-sm {
+    font-size: 0.65rem;
+  }
+  .badge-teal-pill {
+    background: rgba(0, 187, 249, 0.12);
+    color: #00a0d4;
+  }
+  .badge-pink-pill {
+    background: rgba(241, 91, 181, 0.1);
+    color: #d14fa0;
+  }
+
+  /* ── Icon circles ── */
+  .icon-circle-pink {
+    width: 48px;
+    height: 48px;
+    background: rgba(241, 91, 181, 0.1);
+  }
+  .icon-circle-teal {
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 187, 249, 0.1);
+  }
+  .icon-circle-pink-dark {
+    width: 48px;
+    height: 48px;
+    background: rgba(241, 91, 181, 0.15);
+  }
+
+  /* ── Stat divider ── */
+  .stat-divider {
+    width: 1px;
+    height: 36px;
+    background: #e5e5e5;
+  }
+
+  /* ── Overlay ── */
+  .overlay-grad {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.72) 0%,
+      transparent 60%
+    );
+  }
+
+  /* ── Who cards — all landscape, equal height ── */
+  .who-card {
+    height: 280px;
+    cursor: default;
+  }
+
+  /* ── Service cards ── */
+  .card-service {
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+  .card-service:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  }
+  .service-list li {
+    border-color: #f5f5f5;
+  }
+  .service-list-dark li {
+    border-color: rgba(255, 255, 255, 0.07);
+    padding: 0.25rem 0;
+  }
+
+  /* ── Consult cards ── */
+  .consult-card {
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+  .consult-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+  }
+
+  /* ── Testimonials ── */
+  .card-testimonial {
+    transition: transform 0.2s;
+  }
+  .card-testimonial:hover {
+    transform: translateY(-3px);
+  }
+  .quote-mark {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  .avatar-sm {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ── Resource cards ── */
+  .resource-card {
+    border-color: #f0f0f0 !important;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+  .resource-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.07);
+  }
+  .resource-img-wrap {
+    height: 200px;
+    overflow: hidden;
+  }
+  .resource-img {
+    height: 200px;
+    transition: transform 0.4s;
+  }
+  .resource-card:hover .resource-img {
+    transform: scale(1.04);
+  }
+  .play-btn {
+    width: 52px;
+    height: 52px;
+    background: rgba(241, 91, 181, 0.85);
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
+  }
+  .resource-card:hover .play-btn {
+    background: #f15bb5;
+  }
+
+  /* ── Nav logo ── */
+  .nav-logo-mark {
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, #f15bb5, #00bbf9);
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+  /* ── Contact glows ── */
+  .contact-glow-pink {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(
+      circle,
+      rgba(241, 91, 181, 0.15) 0%,
+      transparent 70%
+    );
+    top: -100px;
+    right: -80px;
+    pointer-events: none;
+  }
+  .contact-glow-teal {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(
+      circle,
+      rgba(0, 187, 249, 0.12) 0%,
+      transparent 70%
+    );
+    bottom: -80px;
+    left: -60px;
+    pointer-events: none;
+  }
+  .input-padded {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* ── Footer ── */
+  .footer-logo-mark {
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(135deg, #f15bb5, #00bbf9);
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .footer-link {
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.15s;
+  }
+  .footer-link:hover {
+    color: white;
+  }
+</style>

@@ -1,13 +1,13 @@
 <template>
     <div>
-        <div class="container py-5">
-            <div v-if="notFound" class="text-center py-5">
+        <div class="container py-5 mt-5">
+            <div m-if="notFound" class="text-center py-5">
                 <h2 class="fw-bold">Post not found</h2>
                 <p class="text-muted">That post doesn't exist.</p>
                 <a href="/blog" class="btn btn-outline-primary mt-2">← Back to Blog</a>
             </div>
 
-            <div v-if="post" class="row justify-content-center">
+            <div m-if="post" class="row justify-content-center">
                 <div class="col-lg-8">
                     <a href="/blog" class="text-muted text-decoration-none small d-inline-block mb-4">← Back to Blog</a>
                     <div class="d-flex gap-2 align-items-center mb-3">
@@ -16,8 +16,7 @@
                     </div>
                     <h1 class="fw-bold display-6 mb-2">{{post.title}}</h1>
                     <p class="text-muted mb-5">By {{post.author}}</p>
-                    <div class="fs-5 lh-lg text-secondary">
-                        {{post.content}}
+                    <div class="fs-5 lh-lg text-secondary" m-html="post.content">
                     </div>
                 </div>
             </div>

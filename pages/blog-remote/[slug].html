@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex flex-column min-vh-100">
-        <div class="container py-5 flex-grow-1">
-            <div v-if="loading" class="row justify-content-center">
+        <div class="container py-5 flex-grow-1 mt-5">
+            <div m-if="loading" class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="placeholder-glow mb-4">
                         <span class="placeholder col-2 me-2 rounded-pill"></span>
@@ -20,13 +20,13 @@
                 </div>
             </div>
 
-            <div v-if="notFound" class="text-center py-5">
+            <div m-if="notFound" class="text-center py-5">
                 <h2 class="fw-bold">Post not found</h2>
                 <p class="text-muted">No post with that slug exists.</p>
                 <a href="/blog-remote" class="btn btn-outline-primary mt-2">← Back to Remote Blog</a>
             </div>
 
-            <div v-if="post" class="row justify-content-center">
+            <div m-if="post" class="row justify-content-center">
                 <div class="col-lg-8">
                     <a href="/blog-remote" class="text-muted text-decoration-none small d-inline-block mb-4">← Back to Remote Blog</a>
 
@@ -43,10 +43,10 @@
                         {{post.body}}
                     </div>
 
-                    <div v-if="comments" class="border-top pt-4">
+                    <div m-if="comments" class="border-top pt-4">
                         <h2 class="fw-bold fs-4 mb-4">Comments</h2>
                         <div class="d-flex flex-column gap-3">
-                            <div class="card border-0 bg-light rounded-3 p-3" v-for="comment in comments">
+                            <div class="card border-0 bg-light rounded-3 p-3" m-for="comment in comments">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
                                     <span class="fw-semibold small">{{comment.user.username}}</span>
                                     <span class="badge bg-warning text-dark">{{comment.likes}} likes</span>
